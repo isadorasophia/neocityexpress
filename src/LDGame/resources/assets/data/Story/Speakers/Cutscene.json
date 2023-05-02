@@ -1,0 +1,24 @@
+{
+  "$type": "Murder.Assets.SpeakerAsset, Murder",
+  "SpeakerName": "Hospital",
+  "Portraits": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Portrait, Murder]], System.Collections.Immutable",
+    "HospitalPortrait": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "9cc41c2e-7a73-844e-8146-1c6dacfc1db9",
+      "AnimationId": "hospital"
+    },
+    "Handshake": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "9cc41c2e-7a73-844e-8146-1c6dacfc1db9",
+      "AnimationId": "success"
+    },
+    "Intro1": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "9cc41c2e-7a73-844e-8146-1c6dacfc1db9",
+      "AnimationId": "young-granma"
+    }
+  },
+  "Name": "Cutscene",
+  "Guid": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b"
+}

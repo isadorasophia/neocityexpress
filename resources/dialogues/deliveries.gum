@@ -1,0 +1,42 @@
+=Level1
+    [c:PlayCustomSoundInteraction]
+    @random
+        + You're an amazing person!
+        + Wow, what a fantastic drive!
+        + Unbelievable, you did it!
+
+=Level2
+    [c:PlayCustomSoundInteraction]
+    @random
+        + You're an amazing person!
+        + Wow, what a fantastic drive!
+        + Unbelievable, you did it!
+
+=Level3
+    [c:PlayCustomSoundInteraction]
+    @random
+        + You're an amazing person!
+        + Wow, what a fantastic drive!
+        + Unbelievable, you did it!
+
+=Level4
+    [c:PlayCustomSoundInteraction]
+    @random
+        + You're an amazing person!
+        + Wow, what a fantastic drive!
+        + Unbelievable, you did it!
+
+=Level5
+    [c:PlayCustomSoundInteraction]
+    @random
+        + You're an amazing person!
+        + Wow, what a fantastic drive!
+        + Unbelievable, you did it!
+
+=Level6
+    [c:PlayCustomSoundInteraction]
+    @random
+        + You're an amazing person!
+        + Wow, what a fantastic drive!
+        + Unbelievable, you did it!
+

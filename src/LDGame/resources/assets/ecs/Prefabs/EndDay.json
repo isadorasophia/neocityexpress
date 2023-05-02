@@ -1,0 +1,34 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": true,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "ae40d1dd-b66d-42f7-93c1-cb73a359b45f",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.EndOfDayStateMachine, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.EndOfDayStateMachine, LDGame]], Bang",
+        "_routine": {
+          "$type": "LDGame.StateMachines.EndOfDayStateMachine, LDGame",
+          "_endOfDay": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "c284331a-a96e-4144-a92c-b119bfad6e31",
+            "Situation": 0
+          },
+          "_nextLevel": "3bd26720-c3b1-44c1-b7c3-192d5656cc37",
+          "_cachedPersistedState": "Main"
+        }
+      }
+    }
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "EndDay",
+  "Guid": "42be7988-86ff-4d37-9269-5a9e34ab97aa"
+}

@@ -1,0 +1,59 @@
+{
+  "$type": "Murder.Assets.WorldAsset, Murder",
+  "WorldName": "World",
+  "Order": 1,
+  "_systems": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": []
+  },
+  "_features": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "4dc3c8b1-5b4a-4ca5-818c-f7763169e2e6",
+        "Item2": true
+      }
+    ]
+  },
+  "_folders": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable]], System.Private.CoreLib"
+  },
+  "_entities": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+    "e5c06d11-f5cb-4f1b-938f-bccafdd97d29": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "e5c06d11-f5cb-4f1b-938f-bccafdd97d29",
+      "_name": "Menu",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.MainMenuStateMachine, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.MainMenuStateMachine, LDGame]], Bang",
+          "_routine": {
+            "$type": "LDGame.StateMachines.MainMenuStateMachine, LDGame",
+            "_newGameWorld": "dac6ebf8-f764-4ffa-9302-9bdd5180bdaf",
+            "_continueWorld": "465b6785-586b-4e4d-8313-bf363f5e67a1",
+            "_cachedPersistedState": "Main"
+          }
+        }
+      }
+    },
+    "9c8002b2-3243-4a07-ab20-3e3c158ddac7": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "9c8002b2-3243-4a07-ab20-3e3c158ddac7",
+      "_name": "Music",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.MusicComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.MusicComponent, Murder",
+          "Id": "8aebf388-52a2-4983-be5b-721100578f78"
+        }
+      }
+    }
+  },
+  "_entitiesToFolder": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "Name": "Menu",
+  "Guid": "e09343c5-19b5-419d-88f4-f06ed35a4752"
+}

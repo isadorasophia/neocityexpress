@@ -1,0 +1,25 @@
+{
+  "$type": "Murder.Assets.SpeakerAsset, Murder",
+  "SpeakerName": "Driver",
+  "DefaultPortrait": "Smirk",
+  "Portraits": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Portrait, Murder]], System.Collections.Immutable",
+    "Smirk": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "6f30251c-0f9a-7182-6306-54bf1cbcddb6",
+      "AnimationId": "smirk"
+    },
+    "Serious": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "6f30251c-0f9a-7182-6306-54bf1cbcddb6",
+      "AnimationId": "serious"
+    },
+    "Smile": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "6f30251c-0f9a-7182-6306-54bf1cbcddb6",
+      "AnimationId": "smile"
+    }
+  },
+  "Name": "Driver",
+  "Guid": "3f53f270-850d-4c56-9d91-cad58e7e7c41"
+}

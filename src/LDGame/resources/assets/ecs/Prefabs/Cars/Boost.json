@@ -1,0 +1,121 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": true,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "c70fd501-fb4e-420c-a355-f41117c83816",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent, Murder",
+        "_x": 0.0,
+        "_y": 0.0
+      },
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent, Murder",
+        "TargetSpriteBatch": 1,
+        "AnimationGuid": "98c7d375-00f6-32b9-cfc0-77e1863bdde2",
+        "Offset": {
+          "$type": "Murder.Core.Geometry.Vector2, Murder",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "RotateWithFacing": true,
+        "FlipWithFacing": false,
+        "NextAnimations": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+          "$values": [
+            "boost"
+          ]
+        },
+        "AnimationStartedTime": 0.0,
+        "YSortOffset": 300
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 2,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.BoxShape, Murder",
+              "Width": 22,
+              "Height": 39,
+              "Origin": {
+                "$type": "Murder.Core.Geometry.Vector2, Murder",
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "Offset": {
+                "$type": "Murder.Core.Geometry.Point, Murder",
+                "X": -11,
+                "Y": -21
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 0.36956525,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0
+        }
+      },
+      "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FacingComponent, Murder",
+        "Direction": 6
+      },
+      "LDGame.Components.CarComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "LDGame.Components.CarComponent, LDGame",
+        "Speed": 0.0,
+        "Acceleration": 100.0,
+        "Mass": 1.0,
+        "Friction": 0.0
+      },
+      "LDGame.Components.CarEngineComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "LDGame.Components.CarEngineComponent, LDGame",
+        "DesiredSpeed": {
+          "$type": "Murder.Core.Geometry.Vector2, Murder",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "LerpAmount": 0.0
+      },
+      "LDGame.Components.EnemyComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "LDGame.Components.EnemyComponent, LDGame"
+      },
+      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
+        "OnlyOnce": false,
+        "SendMessageOnExit": false,
+        "SendMessageOnStay": false,
+        "CustomExitMessages": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
+          "$values": []
+        },
+        "PlayerOnly": true
+      },
+      "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.GiveBoostInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.GiveBoostInteraction, LDGame]], Bang",
+        "_interaction": {
+          "$type": "LDGame.Systems.Interactions.GiveBoostInteraction, LDGame",
+          "Duration": 3.0
+        }
+      }
+    },
+    "_children": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib"
+    }
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "Cars/Boost",
+  "Guid": "84615c9b-f358-4586-86f6-b018c95a466d"
+}

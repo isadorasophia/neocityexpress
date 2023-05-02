@@ -1,0 +1,9 @@
+{
+  "$type": "Murder.Assets.SpeakerAsset, Murder",
+  "SpeakerName": "",
+  "Portraits": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Portrait, Murder]], System.Collections.Immutable"
+  },
+  "Name": "Remy",
+  "Guid": "8b136733-fa8f-4d93-b55f-48122649bc41"
+}

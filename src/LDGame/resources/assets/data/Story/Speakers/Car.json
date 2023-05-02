@@ -1,0 +1,15 @@
+{
+  "$type": "Murder.Assets.SpeakerAsset, Murder",
+  "SpeakerName": "Car",
+  "DefaultPortrait": "Car",
+  "Portraits": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Portrait, Murder]], System.Collections.Immutable",
+    "Car": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "f8ede195-02fd-0293-1608-1b3cb744e058",
+      "AnimationId": "serious"
+    }
+  },
+  "Name": "Car",
+  "Guid": "49840efa-ba8e-4168-acf0-8e6ecea32bcc"
+}

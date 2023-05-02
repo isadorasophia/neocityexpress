@@ -1,0 +1,76 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": true,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "f5d53948-a85b-435c-a362-56a9969d4871",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "LDGame.Components.DayCycleComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "LDGame.Components.DayCycleComponent, LDGame",
+        "DayCycle": "00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "_children": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+      "ddda9dd0-4bf6-41d6-99a3-9d59f61c489f": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "ddda9dd0-4bf6-41d6-99a3-9d59f61c489f",
+        "_name": "End",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.InteractOnRuleMatchComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.InteractOnRuleMatchComponent, Murder",
+            "InteractOn": 1,
+            "AfterInteraction": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.CriterionNode, Murder",
+                  "Criterion": {
+                    "$type": "Murder.Core.Dialogs.Criterion, Murder",
+                    "Fact": {
+                      "$type": "Murder.Core.Dialogs.Fact, Murder",
+                      "Blackboard": "Gameplay",
+                      "Name": "FinishedRaceOfDay",
+                      "Kind": 2
+                    },
+                    "Kind": 0,
+                    "BoolValue": true
+                  },
+                  "Kind": 0
+                }
+              ]
+            }
+          },
+          "Bang.Interactions.InteractiveComponent`1[[Murder.Interactions.AddComponentOnInteraction, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Bang.Interactions.InteractiveComponent`1[[Murder.Interactions.AddComponentOnInteraction, Murder]], Bang",
+            "_interaction": {
+              "$type": "Murder.Interactions.AddComponentOnInteraction, Murder",
+              "Component": {
+                "$type": "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.RaceEndedCutscene, LDGame]], Bang",
+                "_routine": {
+                  "$type": "LDGame.StateMachines.RaceEndedCutscene, LDGame",
+                  "_endWorld": "dac6ebf8-f764-4ffa-9302-9bdd5180bdaf",
+                  "_cachedPersistedState": "Start"
+                }
+              },
+              "IsTargetSelf": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "Day",
+  "Guid": "cc2c55af-2ee8-4f9d-895d-01f2bbf96a51"
+}

@@ -1,0 +1,42 @@
+{
+  "$type": "LDGame.Assets.RoadCarsAsset, LDGame",
+  "Events": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Core.CarLevelEvent, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 1,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 3,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.4,
+        "Lane": 0,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 2,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      }
+    ]
+  },
+  "Name": "Rows",
+  "Guid": "66ae757d-8971-46d1-b788-eb0ad0311883"
+}

@@ -1,0 +1,74 @@
+{
+  "$type": "Murder.Assets.FeatureAsset, Murder",
+  "_systems": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.EditorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Road.Editor.Systems.DebugActivatorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.ConsoleSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.DebugMapRenderSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.DebugColliderRenderSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.DebugRouteSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.EntitiesSelectorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.DebugShowInteractionsSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.StateMachineDebugSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.Debug.QuadTreeDebugSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.SystemsDiagnosticsSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.Debug.BlackboardTrackerSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      }
+    ]
+  },
+  "_features": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": []
+  },
+  "Name": "Editor",
+  "Guid": "f7582ec1-8d42-40e3-946b-52a9bfea2b02"
+}

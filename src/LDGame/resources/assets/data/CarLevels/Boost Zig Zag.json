@@ -1,0 +1,34 @@
+{
+  "$type": "LDGame.Assets.RoadCarsAsset, LDGame",
+  "Events": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Core.CarLevelEvent, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 1,
+        "Position": 0,
+        "PrefabToSpawn": "84615c9b-f358-4586-86f6-b018c95a466d",
+        "Warning": false
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.2,
+        "Lane": 2,
+        "Position": 0,
+        "PrefabToSpawn": "84615c9b-f358-4586-86f6-b018c95a466d",
+        "Warning": false
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.22,
+        "Lane": 3,
+        "Position": 0,
+        "PrefabToSpawn": "84615c9b-f358-4586-86f6-b018c95a466d",
+        "Warning": true
+      }
+    ]
+  },
+  "Name": "Boost Zig Zag",
+  "Guid": "94b26ec7-75d8-4f0a-9e48-fac3406ac952"
+}

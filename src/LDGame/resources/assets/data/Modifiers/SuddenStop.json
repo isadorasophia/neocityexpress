@@ -1,0 +1,15 @@
+{
+  "$type": "LDGame.Assets.ModifierAsset, LDGame",
+  "Modifier": {
+    "$type": "LDGame.Core.Modifier, LDGame",
+    "ConstantInput": {
+      "$type": "Murder.Core.Geometry.Vector2, Murder",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "OtherCarsSpeedMultiplier": 1.0,
+    "SuddenBreakEvery": 3.716
+  },
+  "Name": "SuddenStop",
+  "Guid": "23b9f506-d1e4-4554-b9b1-7ef79c485eb6"
+}

@@ -1,0 +1,44 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": true,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "16e2faa1-1e6d-40eb-860e-48def0359129",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent, Murder",
+        "_x": 0.0,
+        "_y": 0.0
+      },
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent, Murder",
+        "TargetSpriteBatch": 3,
+        "AnimationGuid": "4dd09adc-b815-8acd-9322-374b839e3a3b",
+        "Offset": {
+          "$type": "Murder.Core.Geometry.Vector2, Murder",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "NextAnimations": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+          "$values": []
+        },
+        "AnimationStartedTime": 0.0,
+        "YSortOffset": 0
+      }
+    }
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "UI",
+  "Guid": "bc460eb6-8af9-4203-aa4c-a57474593513"
+}

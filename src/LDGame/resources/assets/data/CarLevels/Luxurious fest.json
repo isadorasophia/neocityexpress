@@ -1,0 +1,38 @@
+{
+  "$type": "LDGame.Assets.RoadCarsAsset, LDGame",
+  "Events": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Core.CarLevelEvent, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 2,
+        "Position": 2,
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.15,
+        "Lane": 2,
+        "Position": 2,
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.15,
+        "Lane": 2,
+        "Position": 2,
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.2,
+        "Lane": 2,
+        "Position": 2,
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+      }
+    ]
+  },
+  "Name": "Luxurious fest",
+  "Guid": "171b9310-41d5-48a8-92be-d7f353175dd5"
+}

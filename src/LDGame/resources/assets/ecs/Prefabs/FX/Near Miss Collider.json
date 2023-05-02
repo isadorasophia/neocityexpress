@@ -1,0 +1,74 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": false,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "d35fed8c-c7a9-46cb-b35b-3b9544727ea3",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent, Murder",
+        "_x": 0.0,
+        "_y": 0.0
+      },
+      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
+        "OnlyOnce": false,
+        "SendMessageOnExit": false,
+        "SendMessageOnStay": false,
+        "CustomExitMessages": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
+          "$values": []
+        },
+        "PlayerOnly": true
+      },
+      "Bang.Interactions.InteractiveComponent`1[[LDGame.Interactions.SpawnNearMissInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Interactions.SpawnNearMissInteraction, LDGame]], Bang",
+        "_interaction": {
+          "$type": "LDGame.Interactions.SpawnNearMissInteraction, LDGame"
+        }
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 2,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.BoxShape, Murder",
+              "Width": 40,
+              "Height": 32,
+              "Origin": {
+                "$type": "Murder.Core.Geometry.Vector2, Murder",
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "Offset": {
+                "$type": "Murder.Core.Geometry.Point, Murder",
+                "X": 0,
+                "Y": 0
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 0.0,
+          "G": 0.8369565,
+          "B": 1.0,
+          "A": 1.0
+        }
+      }
+    }
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "FX\\Near Miss Collider",
+  "Guid": "73160256-4e1b-4e06-a645-2d245486e0b8"
+}

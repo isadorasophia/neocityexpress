@@ -1,0 +1,161 @@
+{
+  "$type": "LDGame.Assets.DatingProfileAsset, LDGame",
+  "ThresholdForStartMatching": 1,
+  "Profiles": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DateProfileData, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "home3"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 0,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "boat1"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 1,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "van2"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 2,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "home1"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 3,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "van3"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 4,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "mystery"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 5,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "van1"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 6,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "home4"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 7,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "home2"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 8,
+          "Sender": ""
+        },
+        "CanMatch": true
+      },
+      {
+        "$type": "LDGame.Assets.DateProfileData, LDGame",
+        "Portrait": {
+          "$type": "Murder.Core.Portrait, Murder",
+          "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+          "AnimationId": "boat2"
+        },
+        "Description": {
+          "$type": "Murder.Components.SituationComponent, Murder",
+          "Character": "003b1e4e-a1f1-4481-8fdd-3677d240a6bb",
+          "Situation": 9,
+          "Sender": ""
+        },
+        "CanMatch": true
+      }
+    ]
+  },
+  "Name": "DatingSet1",
+  "Guid": "71143acd-a0ca-41fa-9231-25ad14db9e2d"
+}

@@ -1,0 +1,64 @@
+{
+  "$type": "LDGame.Assets.ConsequencesAsset, LDGame",
+  "Consequences": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.Consequence, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Assets.Consequence, LDGame",
+        "Triggers": {
+          "$type": "Murder.Components.InteractOnRuleMatchCollectionComponent, Murder",
+          "Requirements": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Components.InteractOnRuleMatchComponent, Murder]], System.Collections.Immutable",
+            "$values": [
+              {
+                "$type": "Murder.Components.InteractOnRuleMatchComponent, Murder",
+                "InteractOn": 1,
+                "AfterInteraction": 1,
+                "Requirements": {
+                  "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+                  "$values": [
+                    {
+                      "$type": "Murder.Core.Dialogs.CriterionNode, Murder",
+                      "Criterion": {
+                        "$type": "Murder.Core.Dialogs.Criterion, Murder",
+                        "Fact": {
+                          "$type": "Murder.Core.Dialogs.Fact, Murder",
+                          "Blackboard": "Gameplay",
+                          "Name": "ScaredByAlmostAccident",
+                          "Kind": 2
+                        },
+                        "Kind": 0,
+                        "BoolValue": true
+                      },
+                      "Kind": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Effects": {
+          "$type": "Murder.Interactions.InteractionCollection, Murder",
+          "Interactives": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
+            "$values": [
+              {
+                "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Interactions.LdMonologueInteraction, LDGame]], Bang",
+                "_interaction": {
+                  "$type": "LDGame.Interactions.LdMonologueInteraction, LDGame",
+                  "Character": "461d83c8-9b08-48f8-9a28-8a68026e128d",
+                  "Situation": 1,
+                  "Pause": false,
+                  "MessageType": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Name": "Accidents",
+  "Guid": "596863f5-09b5-461b-b9f0-abdaa6825bc9"
+}

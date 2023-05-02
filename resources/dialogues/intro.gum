@@ -1,0 +1,39 @@
+=Intro
+    Granny: Hey, y'see that lady? That's my grandma, she founded Neo City Express, a courier service running mail and packages all over Neo City.
+    Granny: Within a few years, Neo City Express had become the most trusted delivery service in town. If a package absolutely had to be delivered safely and on time, there was nobody else you could trust.
+    ...but recently Gram-Gram passed away, and Neo City Express suffered. Now the family business has been passed down to me, Daggers McBlack.
+    Of course, there are some who say I'll never live up to what Gram-Gram achieved. But I'm not intimidated! After all, I'm Daggers McBlack, the most attractive and irrationally confident delivery driver this side of West Scumwood!
+    That's why I've made the completely arbitrary commitment of making Neo City Express the number one delivery service in Neo City within 6 days!
+    Don't worry Gram-Gram, I'll carry the family business on my shoulders!
+
+
+
+=Day1_Setup
+    Day 1
+    Package being delivered - Used Robot
+    Destination - Cyber District
+
+=Day2_Setup
+    Day 2
+    Package being delivered - Box of Medicine
+    Destination - Chrome Quarters
+
+=Day3_Setup
+    Day 3
+    Package being delivered - Family Heirloom
+    Destination - East Scumwood
+
+=Day4_Setup
+    Day 4
+    Package being delivered - Fresh Laundry
+    Destination - Downtown
+
+=Day5_Setup
+    Day 5
+    Package being delivered - Stack of Ads
+    Destination - Nexus Coast
+
+=Day6_Setup
+    Day 6
+    Package being delivered - Top Secret Documents
+    Destination - The Mayor's Office

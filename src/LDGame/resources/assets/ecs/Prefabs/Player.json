@@ -1,0 +1,173 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": true,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "2119b3d4-dcb3-4086-94d9-a0209690c21d",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent, Murder",
+        "_x": 0.0,
+        "_y": 0.0
+      },
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent, Murder",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "6e3b1f30-fd0c-9651-6511-c531ace8481e",
+        "Offset": {
+          "$type": "Murder.Core.Geometry.Vector2, Murder",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "NextAnimations": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+          "$values": [
+            "idle"
+          ]
+        },
+        "AnimationStartedTime": 0.0,
+        "YSortOffset": 21
+      },
+      "LDGame.Components.PlayerComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "LDGame.Components.PlayerComponent, LDGame",
+        "CurrentState": 0
+      },
+      "LDGame.Components.CarComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "LDGame.Components.CarComponent, LDGame",
+        "Speed": 140.0,
+        "Acceleration": 250.0,
+        "Mass": 1.0,
+        "Friction": 0.054
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 13,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.PolygonShape, Murder",
+              "Polygon": {
+                "$type": "Murder.Core.Geometry.Polygon, Murder",
+                "Vertices": {
+                  "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.Point, Murder]], System.Collections.Immutable",
+                  "$values": [
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": 13,
+                      "Y": 3
+                    },
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": 10,
+                      "Y": 15
+                    },
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": 0,
+                      "Y": 21
+                    },
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": -10,
+                      "Y": 14
+                    },
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": -12,
+                      "Y": 4
+                    },
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": -10,
+                      "Y": -10
+                    },
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": 0,
+                      "Y": -18
+                    },
+                    {
+                      "$type": "Murder.Core.Geometry.Point, Murder",
+                      "X": 11,
+                      "Y": -10
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0
+        }
+      },
+      "LDGame.Components.PlayerSpeedComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "LDGame.Components.PlayerSpeedComponent, LDGame",
+        "Speed": 0.0
+      },
+      "Bang.Interactions.InteractorComponent, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.Interactions.InteractorComponent, Bang"
+      }
+    },
+    "_children": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+      "7d93cd41-aa1a-4ded-a658-b05178c7aeac": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "7d93cd41-aa1a-4ded-a658-b05178c7aeac",
+        "_name": "Trail",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ParticleSystemComponent, Murder",
+            "Asset": "ecce443e-da4e-443d-9371-749c646c97a5",
+            "DestroyWhenEmpty": false
+          },
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": -7.0,
+            "_y": 24.0
+          }
+        }
+      },
+      "971ba7f8-5dcb-4e12-9293-9a4109734304": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "971ba7f8-5dcb-4e12-9293-9a4109734304",
+        "_name": "Smoke",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": 0.0,
+            "_y": 0.0
+          },
+          "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ParticleSystemComponent, Murder",
+            "Asset": "4887ad29-a900-4e65-98f6-e0e691a64026",
+            "DestroyWhenEmpty": false
+          },
+          "Murder.Components.DisableParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.DisableParticleSystemComponent, Murder"
+          }
+        }
+      }
+    }
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "Player",
+  "Guid": "e4676d89-51f1-455e-b6b3-e85d18b7b72f"
+}

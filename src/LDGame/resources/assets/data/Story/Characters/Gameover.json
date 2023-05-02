@@ -1,0 +1,385 @@
+{
+  "$type": "Murder.Assets.CharacterAsset, Murder",
+  "Owner": "00000000-0000-0000-0000-000000000000",
+  "_situations": {
+    "$type": "System.Collections.Generic.SortedList`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.Situation, Murder]], System.Collections",
+    "0": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 0,
+      "Name": "End",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "The explosion landed Daggers in the hospital, where he had to spend three months in recovery."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "During this time, his sister came to visit, and spent hours at a time by his side."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "The two of them talked endlessly, and grew close in ways they'd never been before."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "Daggers was finally able to open up to her about his substance abuse and his thrill-seeking addiction to danger."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "He had never been so open or vulnerable before."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "When he got out of the hospital, he turned his life around. He committed himself to being a safer, more responsible driver, and never got behind the wheel unless he was completely in control."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "Neo City Express never again became the number one delivery service in Neo City, but Daggers didn't mind. After all, he had his family, and the security of knowing that he was finally taking care of himself."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "He lived a long and happy life."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "HospitalPortrait",
+                  "Text": "Congratulations! You got the GOOD ENDING!"
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        }
+      }
+    },
+    "1": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 1,
+      "Name": "Success",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "Handshake",
+                  "Text": "The mayor was so impressed with Daggers' delivery skills that he awarded him the city's highest honor: a warm hug."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "Handshake",
+                  "Text": "He also gave Neo City Express the exclusive contract to deliver all packages for the government, until the literal end of time."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "Handshake",
+                  "Text": "Daggers became a hero, and he spent the rest of his life making fast and reliable deliveries for clients all over Neo City."
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+                  "Portrait": "Handshake",
+                  "Text": "And yet...."
+                }
+              ]
+            },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "TrueEndingUnlocked",
+                    "Kind": 2
+                  },
+                  "Kind": 0,
+                  "BoolValue": true
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_components": {
+    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[Bang.Components.IComponent, Bang]], Murder",
+    "$values": []
+  },
+  "_portraits": {
+    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib]], Murder",
+    "$values": [
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 1
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 2
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 3
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 4
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 5
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 6
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 7
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 8
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "HospitalPortrait"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "Handshake"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 1,
+          "ItemId": 1
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "Handshake"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 1,
+          "ItemId": 2
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "Handshake"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 1,
+          "ItemId": 3
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "1a9ec707-943d-43e4-b9fc-55e6dfe7ba4b",
+          "Item2": "Handshake"
+        }
+      }
+    ]
+  },
+  "Name": "Gameover",
+  "Guid": "bb50e3ac-34bb-4a2b-83f4-3b65b30af929"
+}

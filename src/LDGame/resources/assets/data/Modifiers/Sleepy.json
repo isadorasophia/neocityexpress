@@ -1,0 +1,18 @@
+{
+  "$type": "LDGame.Assets.ModifierAsset, LDGame",
+  "Modifier": {
+    "$type": "LDGame.Core.Modifier, LDGame",
+    "ConstantInput": {
+      "$type": "Murder.Core.Geometry.Vector2, Murder",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "OtherCarsSpeedMultiplier": 1.0,
+    "SuddenBreakEvery": 0.0,
+    "TheGoodShit": false
+  },
+  "PhoneSway": 0.0,
+  "Sleepy": true,
+  "Name": "Sleepy",
+  "Guid": "e7bc5d5f-b9ee-4e1b-b449-75ecc76236e4"
+}

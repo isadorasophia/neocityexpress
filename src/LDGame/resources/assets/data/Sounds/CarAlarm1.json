@@ -1,0 +1,13 @@
+{
+  "$type": "Road.Assets.FmodSoundAsset, LDGame",
+  "Event": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1729639471,
+    "Data2": 1124446322,
+    "Data3": 1537333927,
+    "Data4": 233108030,
+    "Path": "event:/Car_Interface_Alarm"
+  },
+  "Name": "CarAlarm1",
+  "Guid": "ad90888d-5f61-4c43-87f7-125015e4cc7f"
+}

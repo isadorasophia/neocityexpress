@@ -1,0 +1,13 @@
+{
+  "$type": "Road.Assets.FmodSoundAsset, LDGame",
+  "Event": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 130137505,
+    "Data2": 1206744521,
+    "Data3": 1311261600,
+    "Data4": 1245039004,
+    "Path": "event:/Car_Interface_Glitch"
+  },
+  "Name": "CarGlitch3",
+  "Guid": "10e74c3b-7833-47d6-816a-ca60e9b64f83"
+}

@@ -1,0 +1,50 @@
+{
+  "$type": "LDGame.Assets.RoadCarsAsset, LDGame",
+  "Events": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Core.CarLevelEvent, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 0,
+        "Position": 2,
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 4,
+        "Position": 2,
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.4,
+        "Lane": 2,
+        "Position": 1,
+        "PrefabToSpawn": "3b9103c1-9e90-4daa-ba62-877d57470fc1",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.1,
+        "Lane": 3,
+        "Position": 1,
+        "PrefabToSpawn": "3b9103c1-9e90-4daa-ba62-877d57470fc1",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.1,
+        "Lane": 1,
+        "Position": 1,
+        "PrefabToSpawn": "3b9103c1-9e90-4daa-ba62-877d57470fc1",
+        "Warning": true
+      }
+    ]
+  },
+  "Name": "Swerve",
+  "Guid": "cdafaf11-6b6d-4ad6-9f4c-5a1727ecfd2a"
+}

@@ -1,0 +1,13 @@
+{
+  "$type": "Road.Assets.FmodSoundAsset, LDGame",
+  "Event": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 2033187425,
+    "Data2": 1099416882,
+    "Data3": -1902884186,
+    "Data4": -2078905631,
+    "Path": "event:/Music_Hospital_Ending_Loop"
+  },
+  "Name": "Game over",
+  "Guid": "d26c204b-548f-47d5-ba76-f55fd368d25c"
+}

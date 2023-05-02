@@ -1,0 +1,15 @@
+{
+  "$type": "LDGame.Assets.ModifierAsset, LDGame",
+  "Modifier": {
+    "$type": "LDGame.Core.Modifier, LDGame",
+    "ConstantInput": {
+      "$type": "Murder.Core.Geometry.Vector2, Murder",
+      "X": 0.4,
+      "Y": 0.0
+    },
+    "OtherCarsSpeedMultiplier": 1.0,
+    "SuddenBreakEvery": 0.0
+  },
+  "Name": "StrayRight",
+  "Guid": "db042fd1-6acc-4f83-afd7-9475daa8c1f6"
+}

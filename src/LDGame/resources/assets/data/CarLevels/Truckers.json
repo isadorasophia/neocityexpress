@@ -1,0 +1,42 @@
+{
+  "$type": "LDGame.Assets.RoadCarsAsset, LDGame",
+  "Events": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Core.CarLevelEvent, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 4,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.1,
+        "Lane": 3,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.2,
+        "Lane": 2,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.3,
+        "Lane": 1,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
+      }
+    ]
+  },
+  "Name": "Truckers",
+  "Guid": "1d9c6a70-0316-46c5-9446-872abc785829"
+}

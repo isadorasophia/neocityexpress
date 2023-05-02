@@ -1,0 +1,99 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": false,
+  "_entity": {
+    "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+    "PrefabRef": {
+      "$type": "Murder.Prefabs.PrefabReference, Murder",
+      "Guid": "1e4505e4-8821-46a3-b377-1e2694419d92"
+    },
+    "_removeComponent": {
+      "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+      "$values": []
+    },
+    "_childrenModifiers": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib",
+      "cff6f0a2-06bb-4bd8-b2e2-d749c78db468": {
+        "$type": "Murder.Prefabs.EntityModifier, Murder",
+        "Guid": "cff6f0a2-06bb-4bd8-b2e2-d749c78db468",
+        "_addComponent": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ColliderComponent, Murder",
+            "Layer": 2,
+            "Shapes": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Geometry.BoxShape, Murder",
+                  "Width": 51,
+                  "Height": 76,
+                  "Origin": {
+                    "$type": "Murder.Core.Geometry.Vector2, Murder",
+                    "X": 0.0,
+                    "Y": 0.0
+                  },
+                  "Offset": {
+                    "$type": "Murder.Core.Geometry.Point, Murder",
+                    "X": -3,
+                    "Y": -55
+                  }
+                }
+              ]
+            },
+            "DebugColor": {
+              "$type": "Murder.Core.Graphics.Color, Murder",
+              "R": 0.0,
+              "G": 0.8369565,
+              "B": 1.0,
+              "A": 1.0
+            }
+          }
+        },
+        "_children": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib"
+        },
+        "_removeComponent": {
+          "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+          "$values": []
+        }
+      }
+    },
+    "_ignorePrefabChildren": false,
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent, Murder",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "9575bb30-41ef-b9da-2939-420f852de339",
+        "Offset": {
+          "$type": "Murder.Core.Geometry.Vector2, Murder",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "RotateWithFacing": true,
+        "FlipWithFacing": false,
+        "NextAnimations": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+          "$values": []
+        },
+        "AnimationStartedTime": 0.0,
+        "YSortOffset": 17
+      }
+    },
+    "_children": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib"
+    },
+    "_guid": "96e1d94a-ee1f-4a88-841c-a575a173259e",
+    "_name": "Cars/SimpleBase Instance"
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "Cars/Taxi",
+  "Guid": "38f6ef16-e7c6-4d5d-b758-8c8b0d6cf0a8"
+}

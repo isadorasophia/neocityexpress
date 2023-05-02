@@ -1,0 +1,162 @@
+{
+  "$type": "LDGame.Assets.DayCycleAsset, LDGame",
+  "Day": {
+    "$type": "LDGame.Assets.DayCycle, LDGame",
+    "BeforeDriving": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DriverlessDialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": [
+        {
+          "$type": "LDGame.Assets.DriverlessDialogueEvent, LDGame",
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "4713c664-f96b-467e-815d-fa675fa2c018",
+            "Situation": 0,
+            "Sender": ""
+          },
+          "Type": 0
+        },
+        {
+          "$type": "LDGame.Assets.DriverlessDialogueEvent, LDGame",
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "c38f9f6e-f80a-467e-b834-a715a551a952",
+            "Situation": 0,
+            "Sender": "Client"
+          },
+          "Type": 1
+        },
+        {
+          "$type": "LDGame.Assets.DriverlessDialogueEvent, LDGame",
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "4713c664-f96b-467e-815d-fa675fa2c018",
+            "Situation": 1,
+            "Sender": ""
+          },
+          "Type": 0
+        }
+      ]
+    },
+    "Monologues": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": [
+        {
+          "$type": "LDGame.Assets.DialogueEvent, LDGame",
+          "Time": 0.3,
+          "Pause": true,
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "4713c664-f96b-467e-815d-fa675fa2c018",
+            "Situation": 2,
+            "Sender": ""
+          }
+        },
+        {
+          "$type": "LDGame.Assets.DialogueEvent, LDGame",
+          "Time": 0.7,
+          "Pause": true,
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "4713c664-f96b-467e-815d-fa675fa2c018",
+            "Situation": 3,
+            "Sender": ""
+          }
+        }
+      ]
+    },
+    "CellphoneTexts": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": [
+        {
+          "$type": "LDGame.Assets.DialogueEvent, LDGame",
+          "Time": 0.31,
+          "ForceEventBy": 0.59,
+          "Pause": false,
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "c38f9f6e-f80a-467e-b834-a715a551a952",
+            "Situation": 4,
+            "Sender": "Client"
+          }
+        },
+        {
+          "$type": "LDGame.Assets.DialogueEvent, LDGame",
+          "Time": 0.71,
+          "ForceEventBy": 0.9,
+          "Pause": false,
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "c38f9f6e-f80a-467e-b834-a715a551a952",
+            "Situation": 7,
+            "Sender": "Sis"
+          }
+        }
+      ]
+    },
+    "TinderEvents": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.TinderEvent, LDGame]], System.Collections.Immutable",
+      "$values": []
+    },
+    "AfterDriving": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DriverlessDialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": [
+        {
+          "$type": "LDGame.Assets.DriverlessDialogueEvent, LDGame",
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "4713c664-f96b-467e-815d-fa675fa2c018",
+            "Situation": 4,
+            "Sender": ""
+          },
+          "Type": 0
+        }
+      ]
+    },
+    "PossibleCars": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+      "$values": [
+        "043c05c3-9cfa-4125-9dfa-1b49deec1770",
+        "66ae757d-8971-46d1-b788-eb0ad0311883",
+        "caf206fd-910a-4b6c-bbf3-107185008904",
+        "b56cf1be-fd6d-40a5-833e-803fc5d0beff",
+        "a81752a6-2615-4f63-922c-ff479c31edeb",
+        "4ee6701f-23a4-4d18-ac77-cc05c07ec752",
+        "1d9c6a70-0316-46c5-9446-872abc785829",
+        "171b9310-41d5-48a8-92be-d7f353175dd5",
+        "cdafaf11-6b6d-4ad6-9f4c-5a1727ecfd2a"
+      ]
+    },
+    "StartingModifiers": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+      "$values": []
+    },
+    "StartingHealth": 5,
+    "Distance": 120.0
+  },
+  "Consequences": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      "596863f5-09b5-461b-b9f0-abdaa6825bc9"
+    ]
+  },
+  "NextDay": "02959957-3f41-43e9-8495-50e577ce96ec",
+  "DeliveryContent": {
+    "$type": "LDGame.Assets.DeliveryStats, LDGame",
+    "Day": 1,
+    "Content": "Used Robot",
+    "Destination": "Cyber District",
+    "Image": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "11e5c92f-a774-d58d-bfc5-7e8e368590b3",
+      "AnimationId": "used_robot"
+    }
+  },
+  "DeliveryEnded": {
+    "$type": "Murder.Components.SituationComponent, Murder",
+    "Character": "1616cc2d-767c-4c73-b9ba-bc96317ad90f",
+    "Situation": 0,
+    "Sender": ""
+  },
+  "Name": "Day1",
+  "Guid": "0c31c8ad-dfad-44b5-8b83-d225652099cb"
+}

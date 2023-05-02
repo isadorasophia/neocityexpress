@@ -1,0 +1,42 @@
+{
+  "$type": "LDGame.Assets.RoadCarsAsset, LDGame",
+  "Events": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Core.CarLevelEvent, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 0,
+        "Position": 0,
+        "PrefabToSpawn": "38f6ef16-e7c6-4d5d-b758-8c8b0d6cf0a8",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 3,
+        "Position": 2,
+        "PrefabToSpawn": "3b9103c1-9e90-4daa-ba62-877d57470fc1",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.6,
+        "Lane": 2,
+        "Position": 1,
+        "PrefabToSpawn": "3b9103c1-9e90-4daa-ba62-877d57470fc1",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.5,
+        "Lane": 1,
+        "Position": 1,
+        "PrefabToSpawn": "38f6ef16-e7c6-4d5d-b758-8c8b0d6cf0a8",
+        "Warning": true
+      }
+    ]
+  },
+  "Name": "Easy",
+  "Guid": "caf206fd-910a-4b6c-bbf3-107185008904"
+}

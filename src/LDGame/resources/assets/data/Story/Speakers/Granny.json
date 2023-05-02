@@ -1,0 +1,20 @@
+{
+  "$type": "Murder.Assets.SpeakerAsset, Murder",
+  "SpeakerName": "Granny",
+  "DefaultPortrait": "Serious",
+  "Portraits": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Portrait, Murder]], System.Collections.Immutable",
+    "Smile": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "c4aaf568-3b97-24e2-ace3-14551882152e",
+      "AnimationId": "smile"
+    },
+    "Serious": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "c4aaf568-3b97-24e2-ace3-14551882152e",
+      "AnimationId": "serious"
+    }
+  },
+  "Name": "Granny",
+  "Guid": "36177e3d-8fd8-4c8a-9e26-c4d4c97faef0"
+}

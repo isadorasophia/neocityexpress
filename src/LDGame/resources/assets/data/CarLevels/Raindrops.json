@@ -1,0 +1,50 @@
+{
+  "$type": "LDGame.Assets.RoadCarsAsset, LDGame",
+  "Events": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Core.CarLevelEvent, LDGame]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 0,
+        "Position": 1,
+        "PrefabToSpawn": "46fd7769-3d4c-46a4-b8b6-65f6165ea690",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.25,
+        "Lane": 4,
+        "Position": 1,
+        "PrefabToSpawn": "46fd7769-3d4c-46a4-b8b6-65f6165ea690",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.25,
+        "Lane": 1,
+        "Position": 1,
+        "PrefabToSpawn": "46fd7769-3d4c-46a4-b8b6-65f6165ea690",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.25,
+        "Lane": 3,
+        "Position": 1,
+        "PrefabToSpawn": "46fd7769-3d4c-46a4-b8b6-65f6165ea690",
+        "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.25,
+        "Lane": 2,
+        "Position": 1,
+        "PrefabToSpawn": "46fd7769-3d4c-46a4-b8b6-65f6165ea690",
+        "Warning": true
+      }
+    ]
+  },
+  "Name": "Raindrops",
+  "Guid": "b56cf1be-fd6d-40a5-833e-803fc5d0beff"
+}

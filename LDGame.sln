@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDGame", "src\LDGame\LDGame.csproj", "{BAFA43C6-DFB1-4658-8E67-2CC87AED5434}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Murder", "Murder", "{DBBB6080-5D83-4376-AA7B-351D41E56456}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murder", "murder\src\Murder\Murder.csproj", "{C5CEE0DD-3717-438E-A2BD-7E16CE782068}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bang", "murder\bang\src\Bang.csproj", "{62942AAD-901E-499B-A031-630CE9697ED6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murder.Generator", "murder\src\Murder.Generator\Murder.Generator.csproj", "{3532AECC-A25C-4530-BABA-692F25668999}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LDGame.Editor", "src\LDGame.Editor\LDGame.Editor.csproj", "{DA9775EF-2C65-4A6B-9B6E-12DB3EE121D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murder.Editor", "murder\src\Murder.Editor\Murder.Editor.csproj", "{D0180438-59CB-4291-9669-0866B28AB122}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gum", "murder\gum\src\Gum\Gum.csproj", "{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAFA43C6-DFB1-4658-8E67-2CC87AED5434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFA43C6-DFB1-4658-8E67-2CC87AED5434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFA43C6-DFB1-4658-8E67-2CC87AED5434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFA43C6-DFB1-4658-8E67-2CC87AED5434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CEE0DD-3717-438E-A2BD-7E16CE782068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CEE0DD-3717-438E-A2BD-7E16CE782068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CEE0DD-3717-438E-A2BD-7E16CE782068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CEE0DD-3717-438E-A2BD-7E16CE782068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62942AAD-901E-499B-A031-630CE9697ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62942AAD-901E-499B-A031-630CE9697ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62942AAD-901E-499B-A031-630CE9697ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62942AAD-901E-499B-A031-630CE9697ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3532AECC-A25C-4530-BABA-692F25668999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3532AECC-A25C-4530-BABA-692F25668999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3532AECC-A25C-4530-BABA-692F25668999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3532AECC-A25C-4530-BABA-692F25668999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9775EF-2C65-4A6B-9B6E-12DB3EE121D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9775EF-2C65-4A6B-9B6E-12DB3EE121D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9775EF-2C65-4A6B-9B6E-12DB3EE121D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9775EF-2C65-4A6B-9B6E-12DB3EE121D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0180438-59CB-4291-9669-0866B28AB122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0180438-59CB-4291-9669-0866B28AB122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0180438-59CB-4291-9669-0866B28AB122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0180438-59CB-4291-9669-0866B28AB122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5CEE0DD-3717-438E-A2BD-7E16CE782068} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
+		{62942AAD-901E-499B-A031-630CE9697ED6} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
+		{3532AECC-A25C-4530-BABA-692F25668999} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
+		{D0180438-59CB-4291-9669-0866B28AB122} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19CF3A5B-68E0-4F31-A74A-E49966DBD717}
+	EndGlobalSection
+EndGlobal

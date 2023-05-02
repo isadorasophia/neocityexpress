@@ -1,0 +1,32 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": false,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "229b7fee-ce52-4a14-b5e3-60928358c128",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.Menu.PauseMenuStateMachine, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.Menu.PauseMenuStateMachine, LDGame]], Bang",
+        "_routine": {
+          "$type": "LDGame.StateMachines.Menu.PauseMenuStateMachine, LDGame",
+          "_mainMenuWorld": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+          "_cachedPersistedState": "StartPause"
+        }
+      },
+      "Murder.Components.DoNotPauseComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.DoNotPauseComponent, Murder"
+      }
+    }
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 1,
+    "Height": 1
+  },
+  "Name": "Ui/Pause",
+  "Guid": "bf0ff08c-cdfb-4d82-85d9-c857ff22f065"
+}

@@ -1,0 +1,73 @@
+{
+  "$type": "Murder.Assets.CharacterAsset, Murder",
+  "Owner": "00000000-0000-0000-0000-000000000000",
+  "_situations": {
+    "$type": "System.Collections.Generic.SortedList`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.Situation, Murder]], System.Collections",
+    "0": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 0,
+      "Name": "End",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": 1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": "Another day, another job..."
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 3,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_components": {
+    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[Bang.Components.IComponent, Bang]], Murder",
+    "$values": []
+  },
+  "_portraits": {
+    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib]], Murder",
+    "$values": []
+  },
+  "Name": "Endrace",
+  "Guid": "c284331a-a96e-4144-a92c-b119bfad6e31"
+}

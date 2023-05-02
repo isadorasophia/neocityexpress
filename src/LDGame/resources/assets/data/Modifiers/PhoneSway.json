@@ -1,0 +1,15 @@
+{
+  "$type": "LDGame.Assets.ModifierAsset, LDGame",
+  "Modifier": {
+    "$type": "LDGame.Core.Modifier, LDGame",
+    "ConstantInput": {
+      "$type": "Murder.Core.Geometry.Vector2, Murder",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "OtherCarsSpeedMultiplier": 0.0,
+    "SuddenBreakEvery": 0.0
+  },
+  "Name": "PhoneSway",
+  "Guid": "7b0430e5-5f91-4e98-8712-2ba6168eb476"
+}

@@ -1,0 +1,14 @@
+{
+  "$type": "Murder.Assets.SpeakerAsset, Murder",
+  "SpeakerName": "Tinder",
+  "Portraits": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Portrait, Murder]], System.Collections.Immutable",
+    "Van1": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "dbaff5ef-64ac-f438-95c8-3330137e4412",
+      "AnimationId": "van1"
+    }
+  },
+  "Name": "Tinder",
+  "Guid": "01c0a4f2-88d9-4417-a119-3ae7614d3c34"
+}

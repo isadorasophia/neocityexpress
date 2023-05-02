@@ -1,0 +1,13 @@
+{
+  "$type": "Road.Assets.FmodSoundAsset, LDGame",
+  "Event": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -218435470,
+    "Data2": 1207045610,
+    "Data3": 254056347,
+    "Data4": -9424077,
+    "Path": "event:/Music_Loop"
+  },
+  "Name": "Music loop",
+  "Guid": "dae1c06e-f940-47d8-a1ff-f783ddf50cec"
+}

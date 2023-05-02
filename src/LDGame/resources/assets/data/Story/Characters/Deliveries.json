@@ -1,0 +1,1244 @@
+{
+  "$type": "Murder.Assets.CharacterAsset, Murder",
+  "Owner": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+  "_situations": {
+    "$type": "System.Collections.Generic.SortedList`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.Situation, Murder]], System.Collections",
+    "0": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 0,
+      "Name": "Level1",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "",
+                    "Kind": 5,
+                    "ComponentType": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  },
+                  "Kind": 3,
+                  "ComponentValue": {
+                    "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+                    "_interaction": {
+                      "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+                      "Sound": {
+                        "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+                        "Data1": -1700402033,
+                        "Data2": 1077121206,
+                        "Data3": 1827414412,
+                        "Data4": -655293903,
+                        "Path": "event:/Package_Delivered"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 2,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Robot",
+                  "Text": "You're an amazing person!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 3,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Robot",
+                  "Text": "Wow, what a fantastic drive!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 4,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Robot",
+                  "Text": "Unbelievable, you did it!"
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        },
+        "1": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 2,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "1": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 1,
+      "Name": "Level2",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "",
+                    "Kind": 5,
+                    "ComponentType": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  },
+                  "Kind": 3,
+                  "ComponentValue": {
+                    "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+                    "_interaction": {
+                      "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+                      "Sound": {
+                        "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+                        "Data1": -1700402033,
+                        "Data2": 1077121206,
+                        "Data3": 1827414412,
+                        "Data4": -655293903,
+                        "Path": "event:/Package_Delivered"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 2,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Success",
+                  "Text": "You're an amazing person!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 3,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Success",
+                  "Text": "Wow, what a fantastic drive!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 4,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Success",
+                  "Text": "Unbelievable, you did it!"
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        },
+        "1": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 2,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "2": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 2,
+      "Name": "Level3",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "",
+                    "Kind": 5,
+                    "ComponentType": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  },
+                  "Kind": 3,
+                  "ComponentValue": {
+                    "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+                    "_interaction": {
+                      "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+                      "Sound": {
+                        "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+                        "Data1": -1700402033,
+                        "Data2": 1077121206,
+                        "Data3": 1827414412,
+                        "Data4": -655293903,
+                        "Path": "event:/Package_Delivered"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 2,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Heirloom",
+                  "Text": "You're an amazing person!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 3,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Heirloom",
+                  "Text": "Wow, what a fantastic drive!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 4,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Heirloom",
+                  "Text": "Unbelievable, you did it!"
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        },
+        "1": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 2,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "3": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 3,
+      "Name": "Level4",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "",
+                    "Kind": 5,
+                    "ComponentType": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  },
+                  "Kind": 3,
+                  "ComponentValue": {
+                    "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+                    "_interaction": {
+                      "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+                      "Sound": {
+                        "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+                        "Data1": -1700402033,
+                        "Data2": 1077121206,
+                        "Data3": 1827414412,
+                        "Data4": -655293903,
+                        "Path": "event:/Package_Delivered"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 2,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": "You're an amazing person!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 3,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": "Wow, what a fantastic drive!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 4,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": "Unbelievable, you did it!"
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        },
+        "1": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 2,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "4": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 4,
+      "Name": "Level5",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "",
+                    "Kind": 5,
+                    "ComponentType": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  },
+                  "Kind": 3,
+                  "ComponentValue": {
+                    "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+                    "_interaction": {
+                      "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+                      "Sound": {
+                        "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+                        "Data1": -1700402033,
+                        "Data2": 1077121206,
+                        "Data3": 1827414412,
+                        "Data4": -655293903,
+                        "Path": "event:/Package_Delivered"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 2,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": "You're an amazing person!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 3,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": "Wow, what a fantastic drive!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 4,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": "Unbelievable, you did it!"
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        },
+        "1": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 2,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    },
+    "5": {
+      "$type": "Murder.Core.Dialogs.Situation, Murder",
+      "Id": 5,
+      "Name": "Level6",
+      "Dialogs": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
+        "$values": [
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 0,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 1,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "",
+                    "Kind": 5,
+                    "ComponentType": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  },
+                  "Kind": 3,
+                  "ComponentValue": {
+                    "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+                    "_interaction": {
+                      "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+                      "Sound": {
+                        "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+                        "Data1": -1700402033,
+                        "Data2": 1077121206,
+                        "Data3": 1827414412,
+                        "Data4": -655293903,
+                        "Path": "event:/Package_Delivered"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 2,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Secret",
+                  "Text": "You're an amazing person!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 3,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Secret",
+                  "Text": "Wow, what a fantastic drive!"
+                }
+              ]
+            },
+            "IsChoice": false
+          },
+          {
+            "$type": "Murder.Core.Dialogs.Dialog, Murder",
+            "PlayUntil": -1,
+            "Id": 4,
+            "Requirements": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
+              "$values": []
+            },
+            "Lines": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Speaker": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+                  "Portrait": "Secret",
+                  "Text": "Unbelievable, you did it!"
+                }
+              ]
+            },
+            "IsChoice": false
+          }
+        ]
+      },
+      "Edges": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
+        "0": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 1,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              1
+            ]
+          }
+        },
+        "1": {
+          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
+          "Kind": 2,
+          "Dialogs": {
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+            "$values": [
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_components": {
+    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[Bang.Components.IComponent, Bang]], Murder",
+    "$values": [
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+          "_interaction": {
+            "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+            "Sound": {
+              "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+              "Data1": -1700402033,
+              "Data2": 1077121206,
+              "Data3": 1827414412,
+              "Data4": -655293903,
+              "Path": "event:/Package_Delivered"
+            }
+          }
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+          "_interaction": {
+            "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+            "Sound": {
+              "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+              "Data1": -1700402033,
+              "Data2": 1077121206,
+              "Data3": 1827414412,
+              "Data4": -655293903,
+              "Path": "event:/Package_Delivered"
+            }
+          }
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 2,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+          "_interaction": {
+            "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+            "Sound": {
+              "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+              "Data1": -1700402033,
+              "Data2": 1077121206,
+              "Data3": 1827414412,
+              "Data4": -655293903,
+              "Path": "event:/Package_Delivered"
+            }
+          }
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 3,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+          "_interaction": {
+            "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+            "Sound": {
+              "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+              "Data1": -1700402033,
+              "Data2": 1077121206,
+              "Data3": 1827414412,
+              "Data4": -655293903,
+              "Path": "event:/Package_Delivered"
+            }
+          }
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 4,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+          "_interaction": {
+            "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+            "Sound": {
+              "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+              "Data1": -1700402033,
+              "Data2": 1077121206,
+              "Data3": 1827414412,
+              "Data4": -655293903,
+              "Path": "event:/Package_Delivered"
+            }
+          }
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 5,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "Bang.Interactions.InteractiveComponent`1[[LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame]], Bang",
+          "_interaction": {
+            "$type": "LDGame.Systems.Interactions.PlayCustomSoundInteraction, LDGame",
+            "Sound": {
+              "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+              "Data1": -1700402033,
+              "Data2": 1077121206,
+              "Data3": 1827414412,
+              "Data4": -655293903,
+              "Path": "event:/Package_Delivered"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "_portraits": {
+    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib]], Murder",
+    "$values": [
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 1,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Success"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 2,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Robot"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 3,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Robot"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 0,
+          "DialogId": 4,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Robot"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 2,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Success"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 3,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Success"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 1,
+          "DialogId": 4,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Success"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 2,
+          "DialogId": 2,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Heirloom"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 2,
+          "DialogId": 3,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Heirloom"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 2,
+          "DialogId": 4,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Heirloom"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 5,
+          "DialogId": 2,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Secret"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 5,
+          "DialogId": 3,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Secret"
+        }
+      },
+      {
+        "Key": {
+          "$type": "Murder.Core.Dialogs.DialogItemId, Murder",
+          "SituationId": 5,
+          "DialogId": 4,
+          "ItemId": 0
+        },
+        "Value": {
+          "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+          "Item1": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e",
+          "Item2": "Secret"
+        }
+      }
+    ]
+  },
+  "Name": "Deliveries",
+  "Guid": "1616cc2d-767c-4c73-b9ba-bc96317ad90f"
+}

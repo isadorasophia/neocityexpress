@@ -1,0 +1,303 @@
+{
+  "$type": "LDGame.Assets.LibraryAsset, LDGame",
+  "UiSkin": "42a2a65e-9c48-46da-a21a-9c39474fe486",
+  "Warning": "7aff861f-5264-4019-a389-bbf4b4bc2a3b",
+  "DriverSpeaker": "3f53f270-850d-4c56-9d91-cad58e7e7c41",
+  "GrannySpeaker": "36177e3d-8fd8-4c8a-9e26-c4d4c97faef0",
+  "LanePosition": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      236,
+      300,
+      353,
+      414,
+      472
+    ]
+  },
+  "Explosions": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      "3fa32b0b-77d2-42fc-b322-df7d47657b29",
+      "b4477b39-20e5-4e3e-b0f1-b4d01c79710e"
+    ]
+  },
+  "Bounds": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 220,
+    "Y": 0,
+    "Width": 265,
+    "Height": 340
+  },
+  "DeathWorld": "2969b144-b8b6-45fd-9f73-c1fcd946ee50",
+  "MainMenu": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+  "PausePrefab": "bf0ff08c-cdfb-4d82-85d9-c857ff22f065",
+  "FirstDay": "0c31c8ad-dfad-44b5-8b83-d225652099cb",
+  "NearMissPrefab": "62a8731d-8b37-447c-82b8-7b1b90adea79",
+  "FmodImage": {
+    "$type": "Murder.Core.Portrait, Murder",
+    "Aseprite": "dda90c26-458a-fc77-00b7-bd5810298076",
+    "AnimationId": "intro"
+  },
+  "CityImage": {
+    "$type": "Murder.Core.Portrait, Murder",
+    "Aseprite": "dda90c26-458a-fc77-00b7-bd5810298076",
+    "AnimationId": "PSA"
+  },
+  "TrueEnding": "04bbf134-8bc4-4bcf-9cce-ec15499927f4",
+  "CarLoop": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 747233537,
+    "Data2": 1332325862,
+    "Data3": 733745593,
+    "Data4": -1298563900,
+    "Path": "event:/Car_Move_Loop"
+  },
+  "CarImpact": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 443452453,
+    "Data2": 1183783916,
+    "Data3": -1024451690,
+    "Data4": 435095070,
+    "Path": "event:/Car_Impact"
+  },
+  "GameOverCrash": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1626741115,
+    "Data2": 1073953666,
+    "Data3": 776835252,
+    "Data4": 1165379586,
+    "Path": "event:/Crash_Game_Over"
+  },
+  "CarTireSqueal": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1127125049,
+    "Data2": 1275052931,
+    "Data3": -1688992071,
+    "Data4": -1410749382,
+    "Path": "event:/Car_Tire_Squeal"
+  },
+  "CarInterfaceGlitch1": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 130137505,
+    "Data2": 1206744521,
+    "Data3": 1311261600,
+    "Data4": 1245039004,
+    "Path": "event:/Car_Interface_Glitch"
+  },
+  "CarInterfaceGlitch2": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -2090418391,
+    "Data2": 1134006061,
+    "Data3": -346093692,
+    "Data4": -210702340,
+    "Path": "event:/Car_Interface_Glitch_1"
+  },
+  "CarInterfaceGlitch3": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1935921351,
+    "Data2": 1307429966,
+    "Data3": 1803982248,
+    "Data4": -1272588142,
+    "Path": "event:/Car_Interface_Glitch_2"
+  },
+  "CarInterfaceAlarm1": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1729639471,
+    "Data2": 1124446322,
+    "Data3": 1537333927,
+    "Data4": 233108030,
+    "Path": "event:/Car_Interface_Alarm"
+  },
+  "CarInterfaceAlarm2": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 31413323,
+    "Data2": 1287801112,
+    "Data3": -902670925,
+    "Data4": 410471597,
+    "Path": "event:/Car_Interface_Alarm_1"
+  },
+  "CarBoostStart": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1001030325,
+    "Data2": 1178988691,
+    "Data3": -845789007,
+    "Data4": 1933548127,
+    "Path": "event:/Boost_Start"
+  },
+  "CarBoostLoop": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 452556395,
+    "Data2": 1246775294,
+    "Data3": -1174350425,
+    "Data4": -1742917453,
+    "Path": "event:/Boost_Loop"
+  },
+  "CarBoostEnd": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 810541432,
+    "Data2": 1185534610,
+    "Data3": 53270462,
+    "Data4": -812177642,
+    "Path": "event:/Boost_End"
+  },
+  "GrandmaTextVibrate": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1484984827,
+    "Data2": 1335658661,
+    "Data3": 712128948,
+    "Data4": 2035261322,
+    "Path": "event:/Grandma_Phone_Call_Vibrate"
+  },
+  "GrandmaTextBeep": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -885308612,
+    "Data2": 1278504564,
+    "Data3": -508549486,
+    "Data4": -1944945481,
+    "Path": "event:/Grandma_Text_Beep"
+  },
+  "DaggersTextBeep": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1736488257,
+    "Data2": 1119687252,
+    "Data3": 688967082,
+    "Data4": 869260905,
+    "Path": "event:/Mcblack_Text_Beep"
+  },
+  "LeftDrug": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -959494439,
+    "Data2": 1317692835,
+    "Data3": -1927543879,
+    "Data4": 445157663,
+    "Path": "event:/Left_Drug"
+  },
+  "Fire": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1512959664,
+    "Data2": 1319405012,
+    "Data3": -369330013,
+    "Data4": 1025586712,
+    "Path": "event:/Fire_Loop"
+  },
+  "Horn": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -127576711,
+    "Data2": 1336798214,
+    "Data3": -1245912651,
+    "Data4": -1150333082,
+    "Path": "event:/Horn_Honk"
+  },
+  "KeyboardType": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1246153062,
+    "Data2": 1226361838,
+    "Data3": 752741311,
+    "Data4": 21977543,
+    "Path": "event:/Keyboard_Type_Key"
+  },
+  "UiBack": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -89661761,
+    "Data2": 1266129616,
+    "Data3": 739426739,
+    "Data4": 912367526,
+    "Path": "event:/UI_Back"
+  },
+  "UiConfirm": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1806947106,
+    "Data2": 1293704971,
+    "Data3": -1007549294,
+    "Data4": -1782973624,
+    "Path": "event:/UI_Confirm"
+  },
+  "UiHover": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 785565107,
+    "Data2": 1235449378,
+    "Data3": -764752450,
+    "Data4": -47817861,
+    "Path": "event:/UI_Hover"
+  },
+  "WarningCar": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -668226014,
+    "Data2": 1340433272,
+    "Data3": 1924680625,
+    "Data4": -986469836,
+    "Path": "event:/Warning_Car"
+  },
+  "TextMessageGet": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -321157268,
+    "Data2": 1174749349,
+    "Data3": 1120258727,
+    "Data4": -374188582,
+    "Path": "event:/Text_Message_Get"
+  },
+  "TinderMatch": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -470135716,
+    "Data2": 1319373419,
+    "Data3": 1662484615,
+    "Data4": -1136886706,
+    "Path": "event:/Tinder_Match"
+  },
+  "TinderSwipeLeft": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -251700693,
+    "Data2": 1092491115,
+    "Data3": 2056976305,
+    "Data4": 1738327826,
+    "Path": "event:/Tinder_Swipe_Left"
+  },
+  "TinderSwipeRight": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1083970797,
+    "Data2": 1257136817,
+    "Data3": 683640223,
+    "Data4": 1610184529,
+    "Path": "event:/Tinder_Swipe_Right"
+  },
+  "LevelMusic": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -218435470,
+    "Data2": 1207045610,
+    "Data3": 254056347,
+    "Data4": -9424077,
+    "Path": "event:/Music_Loop"
+  },
+  "TrueEndingNarrator": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -612242153,
+    "Data2": 1294128178,
+    "Data3": -1718671739,
+    "Data4": 1008154473,
+    "Path": "event:/Real_Ending"
+  },
+  "HospitalMusic": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 2033187425,
+    "Data2": 1099416882,
+    "Data3": -1902884186,
+    "Data4": -2078905631,
+    "Path": "event:/Music_Hospital_Ending_Loop"
+  },
+  "HeartMonitor": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1163142110,
+    "Data2": 1238580230,
+    "Data3": -1126190423,
+    "Data4": -666993955,
+    "Path": "event:/Ending_Hospital_Heart_Monitor"
+  },
+  "EyesClosedParameter": {
+    "$type": "Murder.Core.Sounds.ParameterId, Murder",
+    "Data1": 3365366247,
+    "Data2": 1254012252,
+    "Name": "Close_Eyes"
+  },
+  "Name": "DefaultLibrary",
+  "Guid": "775d261b-ff6e-453d-ae96-0765e610e5b7"
+}

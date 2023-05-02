@@ -1,0 +1,266 @@
+=1_Tutorial
+    >> Client: I need that package ASAP. How soon can you be here?
+    > On my way, hold tight.
+        -> 1_ex3
+    > I'm already there! Haha just kidding, I haven't started yet. But soon!
+        -> 1_ex1
+    > Time is an illusion, baby. Daggers McBlack, out.
+        -> 1_ex2
+
+=1_ex3
+    >> Client: Great, thank you. Remember to drive safely.
+    > "Safely" is my middle name.
+    > I'll drive however I wanna drive! You're not the boss of me!
+    > lol
+
+=1_ex1
+    >> Client: That's a weird thing to say, but okay. Just remember to drive safely.
+    > "Safely" is my middle name.
+    > I'll drive however I wanna drive! You're not the boss of me!
+    > lol
+
+=1_ex2
+    >> Client: No it isn't. Time is real and I need the package quickly. And please remember to drive safely.
+    > "Safely" is my middle name.
+    > I'll drive however I wanna drive! You're not the boss of me!
+    > lol
+
+
+=1a_ClientText
+    Driver: I'm on my way and everything is great.
+    >> Client: Glad to hear. You're not texting from the road, are you?
+    > No.
+        -> 1a_ex1
+    > I am, but let me explain. This is part of my process, it's a methodology that allows me to feel comfortable with myself and my place in the world. I'm actually safer this way.
+        -> 1a_ex2
+
+=1a_ex1
+    >> Client: Oh, okay great.
+    > Bye.
+    > I love you.
+
+=1a_ex2
+    >> Client: Wow, I really respect your openness in this matter. Thank you for communicating in an aggressive and unrelenting manner.
+    > Bye.
+    > I love you.
+
+
+=1b_SisterText
+    >> Sis: Hey Daggers, are you sure about taking over the family business? You know you don't have to do this, right?
+    > Don't worry, Gram-Gram is with me.
+        -> 1b_ex1
+    > I know what I'm doing!
+        -> 1b_ex2
+
+
+=1b_ex1
+    >> Sis: She is??
+    > Haha just kidding. Bye!
+
+=1b_ex2
+    >> Sis: Yesterday you cried and screamed "I don't know what I'm doing."
+    > That was the old me.
+        Sis: Okay, well, I trust you. Good luck!
+
+
+
+=2a_Remy1
+    >> Remy: Hi there, I'm Remy. Tell me something about yourself!
+    > Ur hot, let's touch bodies.
+        -> 2a_ex1
+    > Hello, I'm Daggers, I would like to cultivate respect for you as a person.
+        -> 2a_ex2
+    > NeuroBoost, baby! It's in me!! Grrrgrgrghghg
+        -> 2a_ex3
+
+=2a_ex1
+    >> Remy: Ooooooh, steamy! Tell me more about your body...
+    > I'm covered in cool scars.
+        Remy: That's so sexy! Let's talk more later, k?
+    > I'm covered in uninteresting scars.
+        Remy: That's so sexy, but in a really mundane way! Let's talk more later, k?
+    > Scars aren't a reflection of a one's personality so I haven't gone out of my way to acquire any.
+        Remy: I agree with your level headed assessment of scars! Let's talk more later, k?
+
+=2a_ex2
+    >> Remy: Wow, you're the most thoughtful and respectful person I've ever dated!
+    > You bet. In fact, I once read a book!
+        Remy: That's so intellectual! Let's talk more later, k?
+    > We can go to the France Museum and cry at art together.
+        Remy: That's so romantic! Let's talk more later, k?
+    > I gotta keep the horniness inside! Stay down, horniness!
+        Remy: I'm so impressed at how well you're suppressing your horniness! Let's talk more later, k?
+
+=2a_ex3
+    >> Remy: Wow, sounds like you're really into NeuroBoost.
+    > Yes, I have consumed a small and reasonable amount of Neuroboost.
+        Remy: That's so responsible of you! Let's talk more later, k?
+    > I do whatever I like because I'm Daggers McBlack!
+        Remy: That's so confident and assertive of you! Let's talk more later, k?
+    > grrggrgghjhjfjghfjghfrf
+        Remy: You're obviously a horrible person, but I'm fascinated by you! Let's talk more later, k?
+
+
+
+
+
+=3a_Remy2
+    >> Remy: Is now a good time to chat?
+    > Now is a perfect time to chat.
+        -> 3a_ex1
+    > Sorry, busy counteracting drug-swerves.
+        -> 3a_ex2
+
+=3a_ex1
+    >> Remy: Great! I've just been thinking about how mature and responsible you came across yesterday.
+    > Did you know that I'm also a doctor?
+        Remy: You are?? That's so grown-up and socially responsible!
+        Remy: I've gotta go, we'll chat later!
+    > Whoo baby, these drugs are making it hard to drive!
+        Remy: Oh, sorry, it sounds like you're busy. We'll chat later!
+
+=3a_ex2
+    >> Remy: What does that mean??
+    > Driving and drug swerving, you know.
+        Remy: I still don't understand, but it sounds like you're busy. We'll chat later!
+    > It's a code phrase for something legal.
+        Remy: Well it's good that you're following the law! Let's text later, okay?
+
+
+=3b_Sis
+    >> Sis: Hey Daggers, how's it going out there?
+    > Don't worry, I'm not taking drugs.
+        -> 3b_ex1
+    > I'm taking drugs, but I'm doing it safely.
+        -> 3b_ex2
+
+=3b_ex1
+    >> Sis: I... I never said that. Are you taking drugs??
+    > Maybe? Who knows.
+        Sis: Just be careful, okay?
+    > Uh, gotta go.
+
+=3b_ex2
+    >> Sis: What does that mean??
+    > It means I'm making sure to text in shorter sentences so that I am less distracted from the road.
+        Sis: Just be careful, okay?
+    > lol byeee
+
+
+=4b_Grungo
+    >> Grungo: Sup. I'm Grungo.
+    > Damn Grungo how'd you get so hot
+        -> 4b_ex1
+    > My dead grandma told me to reveal myself to you
+        -> 4b_ex2
+    > You caught me on my drug-free day
+        -> 4b_ex3
+
+=4b_ex1
+    >> Grungo: Dunno.
+    > Yeah, I dunno either.
+        Grungo: Okay. Later.
+    > Right. Thanks.
+        Grungo: Okay. Later.
+
+=4b_ex2
+    >> Grungo: Cool.
+    > Yeah. Cool.
+        Grungo: Okay. Later.
+    > Right. Thanks.
+        Grungo: Okay. Later.
+
+=4b_ex3
+    >> Grungo: Okay.
+    > Yeah. Cool.
+        Grungo: Okay. Later.
+    > Right. Thanks.
+        Grungo: Okay. Later.
+
+
+
+
+
+=5a_Remy3
+    >> Remy: Hey Daggers, I've been thinking about our relationship, and I'm ready to take things to the next level.
+    > This is a bad time, my car asked me to do stunts.
+        -> 5a_Ex1
+    > Me too. In fact, I want you to marry me.
+        -> 5a_Ex2
+    > Sorry Remy, I've met Grungo and we're in love.
+        -> 5a_Ex3
+
+
+=5a_Ex1
+    >> Remy: It did?? What did your car say to you?
+    > It wants to feel loved, just like anybody.
+        Remy: Sounds like typical car stuff. I'll let you get back to it!
+    > It needs me to do ten near misses
+        Remy: Sounds like typical car stuff. I'll let you get back to it!
+    > Oh you know how cars are. Typical stuff.
+        Remy: Sounds like typical car stuff. I'll let you get back to it!
+
+=5a_Ex2
+    >> Remy: Really?? Yes! I accept!!
+    > How soon can we start having kids?
+        Remy: Right away! Let's talk more about it later, okay?
+    > Sike! Just kidding!
+        Remy: Oh you! You've always been such a joker! Let's talk more about it later, okay?
+    > Wait what did I just say? I'm on drugs.
+        Remy: You asked me to marry you and I said yes! This is so exciting, let's talk more about it later!
+
+=5a_Ex3
+    >> Remy: Grungo??
+    > Grungo is the only one who can meet my needs.
+        Remy: I understand, Grungo sounds pretty hot. I'll leave you to it.
+    > Grungo is way hotter than you.
+        Remy: Yeah, even Grungo's name is hotter than mine. That's okay, I understand.
+    > Nevermind, I'm back to loving you again.
+        Remy: Phew, that was close! Okay I'll talk to you later.
+
+
+
+
+=6a_Mayor
+    >> Mayor: This is the mayor. I need to know that those documents are safe.
+    > Don't worry Mr Mayor, I'm taking all the drugs I have.
+        -> 6a_Ex1
+    > I am Daggers McBlack and I will die for these documents.
+        -> 6a_Ex2
+    > Mr Mayor should I date Remy or Grungo?
+        -> 6a_Ex3
+
+=6a_Ex1
+    >> Mayor: Good. I'm glad to know you're taking this seriously. Which drugs are you taking?
+    > Just the safe ones.
+        Mayor: That's smart. I'll leave you to it.
+    > I have no idea.
+        Mayor: Excellent, if you don't know then you can't get negative side effects. I'll leave you to it.
+
+=6a_Ex2
+    >> Mayor: Good. That's what I want to hear.
+    > I'll die in any way you want, any time.
+        Mayor: Okay, this is getting weird now.
+
+=6a_Ex3
+    >> Mayor: Interesting question. Going off the names, Remy sounds smarter but Grungo sounds hotter.
+    > You're right, it's Remy.
+        Mayor: Just follow your heart and everything will work out fine. Over and out.
+    > You're right, it's Grungo.
+        Mayor: Just follow your heart and everything will work out fine. Over and out.
+    > What if I dated you, Mr Mayor?
+        Mayor: Me?? Oh goodness, well, I'm flattered... ahem... we can discuss that later!
+
+
+
+=6b_Sis
+    >> Sis: Daggers, how's it going? I heard you're delivering documents for the mayor!
+    > I'm a spy and a doctor, sis!
+        Sis: That's great! Gram-Gram would have been so proud of you.
+    > I'm going to take this company to the top!
+        Sis: That's great! Gram-Gram would have been so proud of you.
+    > The mayor sounds pretty hot!
+        Sis: Yeah, I hear that's how he got to be the mayor.
+    >> Sis: Just be safe out there, okay? I can't wait to see you again!
+    > You too, sis.
+

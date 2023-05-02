@@ -1,0 +1,61 @@
+{
+  "$type": "LDGame.Assets.DayCycleAsset, LDGame",
+  "Day": {
+    "$type": "LDGame.Assets.DayCycle, LDGame",
+    "BeforeDriving": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DriverlessDialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": []
+    },
+    "Monologues": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": []
+    },
+    "CellphoneTexts": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": []
+    },
+    "TinderEvents": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.TinderEvent, LDGame]], System.Collections.Immutable",
+      "$values": []
+    },
+    "AfterDriving": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DriverlessDialogueEvent, LDGame]], System.Collections.Immutable",
+      "$values": []
+    },
+    "PossibleCars": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+      "$values": [
+        "cdafaf11-6b6d-4ad6-9f4c-5a1727ecfd2a"
+      ]
+    },
+    "StartingModifiers": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+      "$values": []
+    },
+    "StartingHealth": 5,
+    "Distance": 100.0
+  },
+  "Consequences": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": []
+  },
+  "NextDay": "00000000-0000-0000-0000-000000000000",
+  "DeliveryContent": {
+    "$type": "LDGame.Assets.DeliveryStats, LDGame",
+    "Day": 1,
+    "Content": "",
+    "Destination": "",
+    "Image": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "00000000-0000-0000-0000-000000000000"
+    }
+  },
+  "DeliveryEnded": {
+    "$type": "Murder.Components.SituationComponent, Murder",
+    "Character": "00000000-0000-0000-0000-000000000000",
+    "Situation": 0,
+    "Sender": ""
+  },
+  "Name": "TestDay",
+  "Guid": "984d6238-1668-418f-9226-a9865f9c8a79"
+}

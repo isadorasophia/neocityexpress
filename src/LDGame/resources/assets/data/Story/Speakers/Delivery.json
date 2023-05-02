@@ -1,0 +1,30 @@
+{
+  "$type": "Murder.Assets.SpeakerAsset, Murder",
+  "SpeakerName": "Delivery",
+  "DefaultPortrait": "Success",
+  "Portraits": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Portrait, Murder]], System.Collections.Immutable",
+    "Robot": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "dda90c26-458a-fc77-00b7-bd5810298076",
+      "AnimationId": "robot"
+    },
+    "Secret": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "dda90c26-458a-fc77-00b7-bd5810298076",
+      "AnimationId": "top-secret"
+    },
+    "Success": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "dda90c26-458a-fc77-00b7-bd5810298076",
+      "AnimationId": "default"
+    },
+    "Heirloom": {
+      "$type": "Murder.Core.Portrait, Murder",
+      "Aseprite": "dda90c26-458a-fc77-00b7-bd5810298076",
+      "AnimationId": "heirloom"
+    }
+  },
+  "Name": "Delivery",
+  "Guid": "80063a75-c1cf-46d0-aef3-2f5aadc4d30e"
+}
