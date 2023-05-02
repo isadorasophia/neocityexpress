@@ -16,7 +16,7 @@ We have an [itch.io page](https://saint11.itch.io/neo-city-express) where you ca
 It currently runs on Windows, Linux and macOS.
 
 ### How to build it?
-Unfortunately, you can't build from this repo (yet), as the games relies on Murder Engine. I intend to release the engine once it's more stable, as we have been done tons of learnings and tweaks around it to do. I also removed all the sound assets, which rely on FMOD.
+Unfortunately, you can't build from this repo (yet), as the games relies on Murder Engine. I intend to release the engine once it's more stable, as I have done tons of learnings and there's some tweaks yet to do. I also removed all the sound assets, which rely on FMOD.
 
 ### Other tools!
 The dialogue itself is written in [gum](https://github.com/isadorasophia/gum), a narrative language designed to integrate with the engine and all the logic is around an ECS supported by [bang](https://github.com/isadorasophia/bang), a C# ECS framework. The rendenring and graphics of the engine are pulled from Monogame, although we don't rely on any of the MonoGame Content Builder because it's not fast enough (we need to hot reload everything!).
