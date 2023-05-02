@@ -4,6 +4,10 @@
 
 <h1 align="center">A game made by Murder Engine</h1>
 
+<p align="center">
+<img width="450" src=".github/images/screenshot1.png" alt="Murder logo">
+</p>
+
 This is the source repository for the "Neo City Express", an entry for Ludum Dare 53.
 
 ### How can I play it?
