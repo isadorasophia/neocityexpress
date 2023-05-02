@@ -22,3 +22,7 @@ Unfortunately, you can't build from this repo (yet), as the games relies on Murd
 The dialogue itself is written in [gum](https://github.com/isadorasophia/gum), a narrative language designed to integrate with the engine and all the logic is around an ECS supported by [bang](https://github.com/isadorasophia/bang), a C# ECS framework. The rendenring and graphics of the engine are pulled from Monogame, although we don't rely on any of the MonoGame Content Builder because it's not fast enough (we need to hot reload everything!).
 
 Anyway, I hope this code helps on any references around ECS or on the engine. Feel free to reach out on any questions!
+
+<p align="center">
+<img width="800" src=".github/images/game_logo.png" alt="Screenshot of Neo City Express"><br>
+</p>
