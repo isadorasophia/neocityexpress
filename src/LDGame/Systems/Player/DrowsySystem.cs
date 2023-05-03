@@ -41,8 +41,7 @@ namespace LDGame.Systems.Player
                 Game.Data.PixelFont.Draw(render.UiBatch, "move your mouse to shake your head", 1, new Vector2(screenSize.X / 2, screenSize.Y - 50 * alert), Vector2.Center, 0.09f, Palette.Colors[19] * _currentSleep);
             }
 
-            // doesn't work >:(
-            // LDGameSoundPlayer.Instance.SetParameter(LibraryServices.GetRoadLibrary().LevelMusic, LibraryServices.GetRoadLibrary().EyesClosedParameter, eyeOpen);
+            LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().EyesClosedParameter, eyeOpen);
         }
 
         private static void UpperLid(RenderContext render, int divisions, Point screenSize, float step, Vector2[] vertices, DrawInfo drawInfo, float eyeOpen)

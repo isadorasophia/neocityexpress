@@ -98,7 +98,7 @@
       "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
       "$values": []
     },
-    "StartingHealth": 5,
+    "StartingHealth": 6,
     "Distance": 120.0
   },
   "Consequences": {

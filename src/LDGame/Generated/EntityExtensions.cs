@@ -57,18 +57,19 @@ namespace Bang.Entities
         RelativeVelocity = 127,
         RemoveAfterTrackedTriggeredEventIsGone = 128,
         ScrollingSprite = 129,
-        SuddenStop = 130,
-        TriggeredEventTracker = 131
+        SpawnOnDeath = 130,
+        SuddenStop = 131,
+        TriggeredEventTracker = 132
     }
 
     public enum LDGameMessageType
     {
-        AgentInput = 132,
-        AgentReleaseInput = 133,
-        CarCollision = 134,
-        Dialogue = 135,
-        TargetEntity = 136,
-        Text = 137
+        AgentInput = 133,
+        AgentReleaseInput = 134,
+        CarCollision = 135,
+        Dialogue = 136,
+        TargetEntity = 137,
+        Text = 138
     }
 
     public static class LDGameEntityExtensions
@@ -174,14 +175,19 @@ namespace Bang.Entities
             return e.GetComponent<ScrollingSprite>(129);
         }
 
+        internal static SpawnOnDeathComponent GetSpawnOnDeath(this Entity e)
+        {
+            return e.GetComponent<SpawnOnDeathComponent>(130);
+        }
+
         public static SuddenStopComponent GetSuddenStop(this Entity e)
         {
-            return e.GetComponent<SuddenStopComponent>(130);
+            return e.GetComponent<SuddenStopComponent>(131);
         }
 
         public static TriggeredEventTrackerComponent GetTriggeredEventTracker(this Entity e)
         {
-            return e.GetComponent<TriggeredEventTrackerComponent>(131);
+            return e.GetComponent<TriggeredEventTrackerComponent>(132);
         }
 
         #endregion
@@ -287,14 +293,19 @@ namespace Bang.Entities
             return e.HasComponent(129);
         }
 
-        public static bool HasSuddenStop(this Entity e)
+        internal static bool HasSpawnOnDeath(this Entity e)
         {
             return e.HasComponent(130);
         }
 
-        public static bool HasTriggeredEventTracker(this Entity e)
+        public static bool HasSuddenStop(this Entity e)
         {
             return e.HasComponent(131);
+        }
+
+        public static bool HasTriggeredEventTracker(this Entity e)
+        {
+            return e.HasComponent(132);
         }
 
         #endregion
@@ -498,6 +509,16 @@ namespace Bang.Entities
             }
 
             return e.GetScrollingSprite();
+        }
+
+        internal static SpawnOnDeathComponent? TryGetSpawnOnDeath(this Entity e)
+        {
+            if (!e.HasSpawnOnDeath())
+            {
+                return null;
+            }
+
+            return e.GetSpawnOnDeath();
         }
 
         public static SuddenStopComponent? TryGetSuddenStop(this Entity e)
@@ -813,34 +834,49 @@ namespace Bang.Entities
             e.AddOrReplaceComponent(new ScrollingSprite(), 129);
         }
 
-        public static void SetSuddenStop(this Entity e, SuddenStopComponent component)
+        internal static void SetSpawnOnDeath(this Entity e, SpawnOnDeathComponent component)
         {
             e.AddOrReplaceComponent(component, 130);
         }
 
-        public static void SetSuddenStop(this Entity e, System.Single when)
+        internal static void SetSpawnOnDeath(this Entity e, System.Action onDeath, System.Single destroyTime)
         {
-            e.AddOrReplaceComponent(new SuddenStopComponent(when), 130);
+            e.AddOrReplaceComponent(new SpawnOnDeathComponent(onDeath, destroyTime), 130);
         }
 
-        public static void SetSuddenStop(this Entity e)
+        internal static void SetSpawnOnDeath(this Entity e)
         {
-            e.AddOrReplaceComponent(new SuddenStopComponent(), 130);
+            e.AddOrReplaceComponent(new SpawnOnDeathComponent(), 130);
         }
 
-        public static void SetTriggeredEventTracker(this Entity e, TriggeredEventTrackerComponent component)
+        public static void SetSuddenStop(this Entity e, SuddenStopComponent component)
         {
             e.AddOrReplaceComponent(component, 131);
         }
 
+        public static void SetSuddenStop(this Entity e, System.Single when)
+        {
+            e.AddOrReplaceComponent(new SuddenStopComponent(when), 131);
+        }
+
+        public static void SetSuddenStop(this Entity e)
+        {
+            e.AddOrReplaceComponent(new SuddenStopComponent(), 131);
+        }
+
+        public static void SetTriggeredEventTracker(this Entity e, TriggeredEventTrackerComponent component)
+        {
+            e.AddOrReplaceComponent(component, 132);
+        }
+
         public static void SetTriggeredEventTracker(this Entity e)
         {
-            e.AddOrReplaceComponent(new TriggeredEventTrackerComponent(), 131);
+            e.AddOrReplaceComponent(new TriggeredEventTrackerComponent(), 132);
         }
 
         public static void SetTriggeredEventTracker(this Entity e, LDGame.Components.TriggeredEventTrackerKind kind, System.Single limit)
         {
-            e.AddOrReplaceComponent(new TriggeredEventTrackerComponent(kind, limit), 131);
+            e.AddOrReplaceComponent(new TriggeredEventTrackerComponent(kind, limit), 132);
         }
 
         #endregion
@@ -946,14 +982,19 @@ namespace Bang.Entities
             return e.RemoveComponent(129);
         }
 
-        public static bool RemoveSuddenStop(this Entity e)
+        internal static bool RemoveSpawnOnDeath(this Entity e)
         {
             return e.RemoveComponent(130);
         }
 
-        public static bool RemoveTriggeredEventTracker(this Entity e)
+        public static bool RemoveSuddenStop(this Entity e)
         {
             return e.RemoveComponent(131);
+        }
+
+        public static bool RemoveTriggeredEventTracker(this Entity e)
+        {
+            return e.RemoveComponent(132);
         }
 
         #endregion
@@ -961,32 +1002,32 @@ namespace Bang.Entities
         #region Message "Has" checkers!
         internal static bool HasAgentInputMessage(this Entity e)
         {
-            return e.HasMessage(132);
+            return e.HasMessage(133);
         }
 
         internal static bool HasAgentReleaseInputMessage(this Entity e)
         {
-            return e.HasMessage(133);
+            return e.HasMessage(134);
         }
 
         public static bool HasCarCollisionMessage(this Entity e)
         {
-            return e.HasMessage(134);
+            return e.HasMessage(135);
         }
 
         internal static bool HasDialogueMessage(this Entity e)
         {
-            return e.HasMessage(135);
+            return e.HasMessage(136);
         }
 
         internal static bool HasTargetEntityMessage(this Entity e)
         {
-            return e.HasMessage(136);
+            return e.HasMessage(137);
         }
 
         internal static bool HasTextMessage(this Entity e)
         {
-            return e.HasMessage(137);
+            return e.HasMessage(138);
         }
 
         #endregion
@@ -1122,8 +1163,9 @@ namespace Bang.Entities
             { typeof(RelativeVelocityComponent), 127 },
             { typeof(RemoveAfterTrackedTriggeredEventIsGoneComponent), 128 },
             { typeof(ScrollingSprite), 129 },
-            { typeof(SuddenStopComponent), 130 },
-            { typeof(TriggeredEventTrackerComponent), 131 },
+            { typeof(SpawnOnDeathComponent), 130 },
+            { typeof(SuddenStopComponent), 131 },
+            { typeof(TriggeredEventTrackerComponent), 132 },
             { typeof(StateMachineComponent<Coroutine>), 93 },
             { typeof(StateMachineComponent<DialogStateMachine>), 93 },
             { typeof(InteractiveComponent<AddComponentOnInteraction>), 94 },
@@ -1178,12 +1220,12 @@ namespace Bang.Entities
             { typeof(PathNotPossibleMessage), 107 },
             { typeof(PickChoiceMessage), 108 },
             { typeof(TouchedGroundMessage), 109 },
-            { typeof(AgentInputMessage), 132 },
-            { typeof(AgentReleaseInputMessage), 133 },
-            { typeof(CarCollisionMessage), 134 },
-            { typeof(DialogueMessage), 135 },
-            { typeof(TargetEntityMessage), 136 },
-            { typeof(TextMessage), 137 }
+            { typeof(AgentInputMessage), 133 },
+            { typeof(AgentReleaseInputMessage), 134 },
+            { typeof(CarCollisionMessage), 135 },
+            { typeof(DialogueMessage), 136 },
+            { typeof(TargetEntityMessage), 137 },
+            { typeof(TextMessage), 138 }
         }.ToImmutableDictionary();
 
         protected override ImmutableDictionary<Type, int> MessagesIndex => _messagesIndex;

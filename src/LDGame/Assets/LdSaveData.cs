@@ -23,7 +23,7 @@ namespace LDGame.Assets
         /// </summary>
         public SituationComponent? NextLevelCutscene = null;
         
-        public int Health = 5;
+        public int Health = 8;
         
         public float TraveledDistance;
         public int Day;

@@ -25,7 +25,7 @@
     "PossibleCars": {
       "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
       "$values": [
-        "cdafaf11-6b6d-4ad6-9f4c-5a1727ecfd2a"
+        "043c05c3-9cfa-4125-9dfa-1b49deec1770"
       ]
     },
     "StartingModifiers": {

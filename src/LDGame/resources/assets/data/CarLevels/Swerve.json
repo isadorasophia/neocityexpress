@@ -29,7 +29,7 @@
       },
       {
         "$type": "LDGame.Core.CarLevelEvent, LDGame",
-        "WaitTime": 0.1,
+        "WaitTime": 0.2,
         "Lane": 3,
         "Position": 1,
         "PrefabToSpawn": "3b9103c1-9e90-4daa-ba62-877d57470fc1",
@@ -37,7 +37,7 @@
       },
       {
         "$type": "LDGame.Core.CarLevelEvent, LDGame",
-        "WaitTime": 0.1,
+        "WaitTime": 0.3,
         "Lane": 1,
         "Position": 1,
         "PrefabToSpawn": "3b9103c1-9e90-4daa-ba62-877d57470fc1",

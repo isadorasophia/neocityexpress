@@ -164,6 +164,8 @@ namespace LDGame.StateMachines
                 yield return Wait.NextFrame;
             }
 
+            LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().UiConfirm, isLoop: false);
+
             yield return GoTo(Main);
         }
 
@@ -187,10 +189,11 @@ namespace LDGame.StateMachines
 @"Pedro Medeiros (@saint11)
 Isadora Rodopoulos (@isainstars)
 Davey Wreden (@HelloCakebread)
-Ryan Roth (@DualRyan)";
+Ryan Roth (@DualRyan)
+Voice Acting by Jack Hicks";
 
                 Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _optionsInfo.Length * 7);
-                Game.Data.MediumFont.Draw(render.GameUiBatch, credits, cameraHalfSize + new Point(0, 120), new Vector2(.5f, 0), 
+                Game.Data.MediumFont.Draw(render.GameUiBatch, credits, cameraHalfSize + new Point(0, 110), new Vector2(.5f, 0), 
                     sort: .5f, Palette.Colors[20], null, null, width - 350, doLineWrapping: false);
 
                 Game.Data.MediumFont.Draw(render.GameUiBatch, "Back to menu", cameraHalfSize + new Point(0, 168), new Vector2(.5f, 0),
@@ -199,7 +202,7 @@ Ryan Roth (@DualRyan)";
             
             var skin = LibraryServices.GetUiSkin();
 
-            RenderServices.DrawSprite(render.UiBatch, skin.Logo, render.Camera.Size / 2f + new Vector2(0, 10 - 10 * MathF.Sin(Game.Now)), "",0, new DrawInfo(0.8f)
+            RenderServices.DrawSprite(render.UiBatch, skin.Logo, new Vector2(render.Camera.Size.X / 2f, 115 - 10 * MathF.Sin(Game.Now)), "",0, new DrawInfo(0.8f)
             {
                 Origin = new Vector2(.5f, .5f)
             });

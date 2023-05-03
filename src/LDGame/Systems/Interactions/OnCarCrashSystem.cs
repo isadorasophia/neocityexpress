@@ -36,13 +36,13 @@ namespace LDGame.Systems.Interactions
                 entity.SetPlayerSpeed(entity.GetPlayerSpeed().Lower(0.5f));
                 
                 var save = SaveServices.GetOrCreateSave();
-                if (save.Health <= 2)
+                if (save.Health <= 3)
                 {
                     entity.TryFetchChild("Smoke")?.RemoveDisableParticleSystem();
                     LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().Fire, isLoop: true, stopLastMusic: false);
                 }
 
-                if (_lastDamage < Game.Now - 1.0f && --save.Health<=0)
+                if (_lastDamage < Game.Now - 1.5f && --save.Health<=0)
                 {
                     LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().Fire, true);
                     

@@ -36,6 +36,8 @@ namespace LDGame.Systems
                 context.Entity.SetDayCycle(nextLevel);
             }
 
+            LDGameSoundPlayer.Instance.Stop(fadeOut: true);
+
             Guid guid = context.Entity.GetDayCycle().DayCycle;
 
             DayCycleAsset? asset = Game.Data.TryGetAsset<DayCycleAsset>(guid);

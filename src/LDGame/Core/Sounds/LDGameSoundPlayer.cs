@@ -133,9 +133,6 @@ namespace LDGame.Core.Sounds
                 // TODO: Figure out how to do this switch in fmod.
                 // In the meantime, we'll manually stop all previous songs.
                 Stop(fadeOut: true);
-            }
-            else
-            {
                 _lastPlayedStreaming = id;
             }
 
@@ -177,15 +174,29 @@ namespace LDGame.Core.Sounds
             }
         }
 
-        public void Stop(SoundEventId id, bool fadeOut)
+        public void SetGlobalParameter(ParameterId parameterId, float value)
+        {
+            // This might not take effect if the parameter is global.
+            _studio?.SetParameterValue(parameterId, value);
+        }
+
+        public float? GetGlobalParameterValue(ParameterId parameterId)
+        {
+            // This might not take effect if the parameter is global.
+            return _studio?.GetParameterCurrentValue(parameterId);
+        }
+
+        public bool Stop(SoundEventId id, bool fadeOut)
         {
             if (_instances.TryGetValue(id, out var instance))
             {
                 instance.Stop(fadeOut);
+                return true;
             }
             else
             {
-                GameLogger.Warning($"Missing sound ID {id.Path}");
+                return false;
+                // GameLogger.Warning($"Missing sound ID {id.Path}");
             }
         }
 

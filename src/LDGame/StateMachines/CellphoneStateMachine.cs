@@ -310,13 +310,22 @@ namespace LDGame.StateMachines
                     lineHeight += textHeight + 9;
                 }
 
-                if (save.MessagesSent == 0 && maximumMatch<8)
+                if (save.MessagesSent == 0)
                 {
-                    Game.Data.PixelFont.Draw(batch, "Type using your keyboard to select an option.\n\n\nIgnore punctuation and spaces.",
-                            cellphoneRect.TopRight + new Vector2(-80, 15 + lineHeight), new Vector2(.5f, 0), sort: 0.61f, 
-                            Palette.Colors[Calculator.Blink(5f,false)? 8:7],  Palette.Colors[9], null, 120);
-
+                    if (maximumMatch < 8)
+                    {
+                        Game.Data.PixelFont.Draw(batch, "Type using your keyboard to select an option.\n\n\nIgnore punctuation and spaces.",
+                                cellphoneRect.TopRight + new Vector2(-80, 15 + lineHeight), new Vector2(.5f, 0), sort: 0.61f,
+                                Palette.Colors[Calculator.Blink(5f, false) ? 8 : 7], Palette.Colors[9], null, 120);
+                    }
+                    else
+                    {
+                        Game.Data.PixelFont.Draw(batch, "You can change your mind with BACKSPACE.",
+                                cellphoneRect.TopRight + new Vector2(-80, 15 + lineHeight), new Vector2(.5f, 0), sort: 0.61f,
+                                Palette.Colors[Calculator.Blink(5f, false) ? 4 : 5], Palette.Colors[2], null, 120);
+                    }
                 }
+                
             }
 
             if (!string.IsNullOrEmpty(_sender))

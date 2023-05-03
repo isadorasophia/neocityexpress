@@ -298,6 +298,24 @@
     "Data2": 1254012252,
     "Name": "Close_Eyes"
   },
+  "CarPitchParameter": {
+    "$type": "Murder.Core.Sounds.ParameterId, Murder",
+    "Data1": 3781065216,
+    "Data2": 2880162442,
+    "Name": "Car_Pitch"
+  },
+  "LeftDrugParameter": {
+    "$type": "Murder.Core.Sounds.ParameterId, Murder",
+    "Data1": 3926017420,
+    "Data2": 2854457350,
+    "Name": "Left_Drug"
+  },
+  "MusicFocusParameter": {
+    "$type": "Murder.Core.Sounds.ParameterId, Murder",
+    "Data1": 3179718976,
+    "Data2": 1905334139,
+    "Name": "Music_Focus"
+  },
   "Name": "DefaultLibrary",
   "Guid": "775d261b-ff6e-453d-ae96-0765e610e5b7"
 }

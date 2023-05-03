@@ -3,6 +3,7 @@ using Bang.StateMachines;
 using LDGame.Assets;
 using LDGame.Components;
 using LDGame.Core;
+using LDGame.Core.Sounds;
 using LDGame.Services;
 using LDGame.Systems;
 using LDGame.Systems.Player;
@@ -35,6 +36,7 @@ namespace LDGame.StateMachines
 
             // stop being drowsy, if we are.
             World.DeactivateSystem<DrowsySystem>();
+            LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().EyesClosedParameter, 100);
 
             // Stop spawning cars!
             World.TryGetUniqueEntity<CarLevelManagerComponent>()?.Destroy();
@@ -51,6 +53,9 @@ namespace LDGame.StateMachines
                 yield break;
             }
 
+            // Make sure we are stopped!
+            car.RemoveBoost();
+
             IntRectangle roadBounds = LibraryServices.GetRoadLibrary().Bounds;
             car.SetMoveToPerfect(roadBounds.TopRight - new Vector2(x: 30, y: -180), 5, EaseKind.CubeOut);
             car.SetCarEngineStopped();
@@ -64,6 +69,9 @@ namespace LDGame.StateMachines
             // =====================
             // Do any pending events
             // =====================
+
+            LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, fadeOut: false);
+
             Guid? dayCycle = World.TryGetUnique<DayCycleComponent>()?.DayCycle;
 
             DayCycle? day = dayCycle is null ? null : Game.Data.TryGetAsset<DayCycleAsset>(dayCycle.Value)?.Day;

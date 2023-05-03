@@ -59,7 +59,9 @@ namespace LDGame.StateMachines
             }
 
             LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().LevelMusic, isLoop: true);
-            // LDGameSoundPlayer.Instance.SetParameter(LibraryServices.GetRoadLibrary().LevelMusic, LibraryServices.GetRoadLibrary().EyesClosedParameter, 100);
+            LDGameSoundPlayer.Instance.SetParameter(LibraryServices.GetRoadLibrary().LevelMusic, LibraryServices.GetRoadLibrary().EyesClosedParameter, 100);
+
+            LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().CarLoop, isLoop: true, stopLastMusic: false);
         }
     }
 }

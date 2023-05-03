@@ -749,7 +749,7 @@
         },
         "LDGame.Components.DayCycleComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "LDGame.Components.DayCycleComponent, LDGame",
-          "DayCycle": "0c31c8ad-dfad-44b5-8b83-d225652099cb"
+          "DayCycle": "984d6238-1668-418f-9226-a9865f9c8a79"
         }
       },
       "_guid": "f13ef674-5d3d-404d-98a5-92bd68bfb138",

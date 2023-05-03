@@ -8,28 +8,32 @@
         "WaitTime": 0.0,
         "Lane": 2,
         "Position": 2,
-        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558",
+        "Warning": true
       },
       {
         "$type": "LDGame.Core.CarLevelEvent, LDGame",
-        "WaitTime": 0.15,
+        "WaitTime": 0.25,
         "Lane": 2,
         "Position": 2,
-        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558",
+        "Warning": true
       },
       {
         "$type": "LDGame.Core.CarLevelEvent, LDGame",
-        "WaitTime": 0.15,
+        "WaitTime": 0.25,
         "Lane": 2,
         "Position": 2,
-        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558",
+        "Warning": true
       },
       {
         "$type": "LDGame.Core.CarLevelEvent, LDGame",
-        "WaitTime": 0.2,
+        "WaitTime": 0.25,
         "Lane": 2,
         "Position": 2,
-        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558"
+        "PrefabToSpawn": "9f0d50ef-a54a-4b27-a6c3-30ab0f240558",
+        "Warning": true
       }
     ]
   },

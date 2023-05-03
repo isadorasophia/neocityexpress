@@ -34,6 +34,14 @@
         "Position": 0,
         "PrefabToSpawn": "46fd7769-3d4c-46a4-b8b6-65f6165ea690",
         "Warning": true
+      },
+      {
+        "$type": "LDGame.Core.CarLevelEvent, LDGame",
+        "WaitTime": 0.0,
+        "Lane": 4,
+        "Position": 2,
+        "PrefabToSpawn": "2203a5f3-9c2a-4c05-816f-d45cc8a1b30e",
+        "Warning": true
       }
     ]
   },

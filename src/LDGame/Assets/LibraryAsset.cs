@@ -103,6 +103,9 @@ namespace LDGame.Assets
         public readonly SoundEventId HeartMonitor;
 
         public readonly ParameterId EyesClosedParameter;
+        public readonly ParameterId CarPitchParameter;
+        public readonly ParameterId LeftDrugParameter;
+        public readonly ParameterId MusicFocusParameter;
 
         internal float GetLanePosition(int lane)
         {

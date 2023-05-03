@@ -68,7 +68,7 @@ namespace LDGame.Systems
             }
 
             if (hasTheGoodShit)
-                multiplier += 0.5f;
+                multiplier += 0.7f;
             
             float xImpulse = impulse.Impulse.X * accel * multiplier * Game.FixedDeltaTime;
             if (Math.Sign(currentVelocity.X) != Math.Sign(impulse.Impulse.X))

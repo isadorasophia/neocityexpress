@@ -73,7 +73,7 @@ namespace LDGame.StateMachines
                 {
                     var currentEvent = level.Events[current];
                     time += Game.DeltaTime;
-                    float target = time + currentEvent.WaitTime * 4f;
+                    float target = time + currentEvent.WaitTime * 3.5f;
 
                     while (time < target)
                     {
@@ -84,22 +84,15 @@ namespace LDGame.StateMachines
                     // Show warning
                     if (currentEvent.Warning)
                     {
-                        SpawnWarning(library.Warning, currentEvent.Position, currentEvent.Lane);
+                        SpawnWarning(library.Warning, currentEvent.PrefabToSpawn, currentEvent.Position, currentEvent.Lane);
                     }
-
-                    target = time + currentEvent.WaitTime;
-
-                    while (time < target)
-                    {
-                        time += Game.DeltaTime;
-                        yield return Wait.NextFrame;
-                    }
-
-                    if (currentEvent.PrefabToSpawn != Guid.Empty)
+                    else
                     {
                         SpawnEntity(currentEvent.PrefabToSpawn, currentEvent.Position, currentEvent.Lane);
                     }
 
+                    target = time + currentEvent.WaitTime;
+                    
                     current++;
                     yield return Wait.NextFrame;
 
@@ -113,28 +106,32 @@ namespace LDGame.StateMachines
             }
         }
 
-        private void SpawnWarning(Guid prefabToSpawn, LanePosition lanePosition, int lane)
+        private void SpawnWarning(Guid warning, Guid prefabToSpawn, LanePosition lanePosition, int lane)
         {
-            var prefab = Game.Data.GetPrefab(prefabToSpawn);
+            var prefab = Game.Data.GetPrefab(warning);
             var entity = prefab.CreateAndFetch(World);
 
             var library = LibraryServices.GetRoadLibrary();
             float xPosition = library.GetLanePosition(lane);
 
+            var action = () => { SpawnEntity(prefabToSpawn, lanePosition, lane); };
             switch (lanePosition)
             {
                 case LanePosition.Top:
                     entity.SetGlobalPosition(new Vector2(xPosition, library.Bounds.Top + 15));
                     entity.SetFacing(Murder.Helpers.Direction.Down);
+                    entity.SetSpawnOnDeath(action, Game.Now + 0.4f);
                     break;
 
                 case LanePosition.Bottom:
                     entity.SetGlobalPosition(new Vector2(xPosition, library.Bounds.Bottom - 20));
                     entity.SetFacing(Murder.Helpers.Direction.Up);
+                    entity.SetSpawnOnDeath(action, Game.Now + 0.4f);
                     break;
                 case LanePosition.TopReverse:
                     entity.SetGlobalPosition(new Vector2(xPosition, library.Bounds.Top + 15));
                     entity.SetFacing(Murder.Helpers.Direction.Down);
+                    entity.SetSpawnOnDeath(action, Game.Now + 0.4f);
                     break;
                 default:
                     break;
@@ -154,17 +151,17 @@ namespace LDGame.StateMachines
             {
                 case LanePosition.Top:
                     entity.SetGlobalPosition(new Vector2(xPosition, library.Bounds.Top - 80));
-                    direction = new Vector2(0, 2f);
+                    direction = new Vector2(0, 1.7f);
                     entity.SetFacing(Murder.Helpers.Direction.Down);
                     break;
 
                 case LanePosition.Bottom:
                     entity.SetGlobalPosition(new Vector2(xPosition, library.Bounds.Bottom + 150));
-                    direction = new Vector2(0,-7f);
+                    direction = new Vector2(0,-6f);
                     break;
                 case LanePosition.TopReverse:
                     entity.SetGlobalPosition(new Vector2(xPosition, library.Bounds.Top - 10));
-                    direction = new Vector2(0, -1f);
+                    direction = new Vector2(0, -1.1f);
                     entity.SetFacing(Murder.Helpers.Direction.Up);
                     break;
                 default:

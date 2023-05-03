@@ -26,6 +26,9 @@ namespace LDGame.StateMachines.Menu
 
         private MenuInfo _menuInfo = new();
 
+        private float _previousFocusMusicValue = 0;
+        private bool _hadCarLoop = false;
+
         public PauseMenuStateMachine()
         {
             State(StartPause);
@@ -41,6 +44,12 @@ namespace LDGame.StateMachines.Menu
 
         private IEnumerator<Wait> Main()
         {
+            _previousFocusMusicValue = 
+                LDGameSoundPlayer.Instance.GetGlobalParameterValue(LibraryServices.GetRoadLibrary().MusicFocusParameter) ?? 0;
+
+            LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().MusicFocusParameter, 1);
+            _hadCarLoop = LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, fadeOut: false);
+
             while (true)
             {
                 if (Game.Input.VerticalMenu(ref _menuInfo, _options))
@@ -89,6 +98,18 @@ namespace LDGame.StateMachines.Menu
             RenderServices.DrawVerticalMenu(render, cameraHalfSize, new Vector2(.5f, .5f), Game.Data.MediumFont, selectedColor: Palette.Colors[7],
                 color: Palette.Colors[5], shadow: Palette.Colors[1], _menuInfo.Selection,
                 out _, _options.Options);
+        }
+
+        public override void OnDestroyed()
+        {
+            base.OnDestroyed();
+
+            LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().MusicFocusParameter, _previousFocusMusicValue);
+
+            if (_hadCarLoop)
+            {
+                LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().CarLoop, isLoop: true, stopLastMusic: false);
+            }
         }
     }
 }

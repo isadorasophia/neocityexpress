@@ -32,6 +32,18 @@
       },
       "Murder.Components.DestroyOnAnimationCompleteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.DestroyOnAnimationCompleteComponent, Murder"
+      },
+      "Murder.Components.SoundComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SoundComponent, Murder",
+        "Sound": {
+          "$type": "System.Nullable`1[[Murder.Core.Sounds.SoundEventId, Murder]], System.Private.CoreLib",
+          "Data1": 1987113702,
+          "Data2": 1196636478,
+          "Data3": -172101498,
+          "Data4": -1516828493,
+          "Path": "event:/Near_Miss_Animation_Sync"
+        },
+        "DestroyEntity": false
       }
     }
   },

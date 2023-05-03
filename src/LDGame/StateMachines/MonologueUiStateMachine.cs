@@ -40,6 +40,8 @@ namespace LDGame.StateMachines
 
         private Entity? _entitySendingMessages = null;
 
+        private bool _hadCarLoopSound = false;
+
         public MonologueUiStateMachine()
         {
             State(Main);
@@ -65,7 +67,20 @@ namespace LDGame.StateMachines
                     Entity.RemoveCustomDraw();
                     Entity.RemoveStateMachine();
 
+                    LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().MusicFocusParameter, 0);
+
+                    if (_hadCarLoopSound)
+                    {
+                        LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().CarLoop, isLoop: true, stopLastMusic: false);
+                    }
+
                     yield break;
+                }
+
+                if (monologue.InputType == InputType.PauseGame)
+                {
+                    LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().MusicFocusParameter, 1);
+                    _hadCarLoopSound |= LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, fadeOut: false);
                 }
 
                 if (monologue.InputType == InputType.Time)
@@ -305,6 +320,13 @@ namespace LDGame.StateMachines
             }
 
             return null;
+        }
+
+        public override void OnDestroyed()
+        {
+            base.OnDestroyed();
+
+            LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().MusicFocusParameter, 0);
         }
     }
 }

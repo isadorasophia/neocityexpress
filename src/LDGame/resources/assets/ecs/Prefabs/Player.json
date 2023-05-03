@@ -41,7 +41,7 @@
         "Speed": 140.0,
         "Acceleration": 250.0,
         "Mass": 1.0,
-        "Friction": 0.054
+        "Friction": 0.068
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",

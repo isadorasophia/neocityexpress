@@ -101,45 +101,50 @@
       "Name": "ScrollingSprite",
       "Type": "LDGame.Components.ScrollingSprite, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
-    "SuddenStop": {
+    "SpawnOnDeath": {
       "Index": 130,
+      "Name": "SpawnOnDeath",
+      "Type": "LDGame.Components.SpawnOnDeathComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "SuddenStop": {
+      "Index": 131,
       "Name": "SuddenStop",
       "Type": "LDGame.Components.SuddenStopComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     "TriggeredEventTracker": {
-      "Index": 131,
+      "Index": 132,
       "Name": "TriggeredEventTracker",
       "Type": "LDGame.Components.TriggeredEventTrackerComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
   },
   "MessagesMap": {
     "AgentInput": {
-      "Index": 132,
+      "Index": 133,
       "Name": "AgentInput",
       "Type": "LDGame.Messages.AgentInputMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     "AgentReleaseInput": {
-      "Index": 133,
+      "Index": 134,
       "Name": "AgentReleaseInput",
       "Type": "LDGame.Messages.AgentReleaseInputMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     "CarCollision": {
-      "Index": 134,
+      "Index": 135,
       "Name": "CarCollision",
       "Type": "LDGame.Messages.CarCollisionMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     "Dialogue": {
-      "Index": 135,
+      "Index": 136,
       "Name": "Dialogue",
       "Type": "LDGame.Messages.DialogueMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     "TargetEntity": {
-      "Index": 136,
+      "Index": 137,
       "Name": "TargetEntity",
       "Type": "LDGame.Messages.TargetEntityMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     "Text": {
-      "Index": 137,
+      "Index": 138,
       "Name": "Text",
       "Type": "LDGame.Messages.TextMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
@@ -1615,43 +1620,48 @@
     },
     {
       "Index": 130,
+      "Name": "SpawnOnDeath",
+      "Type": "LDGame.Components.SpawnOnDeathComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Index": 131,
       "Name": "SuddenStop",
       "Type": "LDGame.Components.SuddenStopComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "Index": 131,
+      "Index": 132,
       "Name": "TriggeredEventTracker",
       "Type": "LDGame.Components.TriggeredEventTrackerComponent, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
   ],
   "Messages": [
     {
-      "Index": 132,
+      "Index": 133,
       "Name": "AgentInput",
       "Type": "LDGame.Messages.AgentInputMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "Index": 133,
+      "Index": 134,
       "Name": "AgentReleaseInput",
       "Type": "LDGame.Messages.AgentReleaseInputMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "Index": 134,
+      "Index": 135,
       "Name": "CarCollision",
       "Type": "LDGame.Messages.CarCollisionMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "Index": 135,
+      "Index": 136,
       "Name": "Dialogue",
       "Type": "LDGame.Messages.DialogueMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "Index": 136,
+      "Index": 137,
       "Name": "TargetEntity",
       "Type": "LDGame.Messages.TargetEntityMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "Index": 137,
+      "Index": 138,
       "Name": "Text",
       "Type": "LDGame.Messages.TextMessage, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }

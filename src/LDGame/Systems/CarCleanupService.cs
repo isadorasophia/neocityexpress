@@ -47,7 +47,7 @@ internal class CarCleanupService : IFixedUpdateSystem
                     
                     if (e.HasPlayer() && hasTheGoodShit)
                     {
-                        e.SetFriction(0.3f);
+                        e.SetFriction(0.35f);
                     }
                     else
                     {

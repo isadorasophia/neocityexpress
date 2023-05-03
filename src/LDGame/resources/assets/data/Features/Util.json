@@ -7,6 +7,11 @@
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
         "Item1": "LDGame.Systems.CameraFollowSystem, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "LDGame.Systems.Cars.DestroyAndSpawnSystem, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
       }
     ]
   },

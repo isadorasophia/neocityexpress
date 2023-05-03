@@ -17,7 +17,7 @@ namespace LDGame.Systems
     {
         public void Exit(Context context)
         {
-            LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, false);
+            LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, fadeOut: true);
         }
 
         public void FixedUpdate(Context context)
@@ -25,25 +25,20 @@ namespace LDGame.Systems
             foreach (var e in context.Entities)
             {
                 float pitch = Calculator.Clamp01((Game.Profile.GameHeight - e.GetGlobalTransform().Vector2.Y) / (float)Game.Profile.GameHeight) * 100f;
-                
-                // TODO: Fix
-                // LDGameSoundPlayer.Get.SetParameter(sound, "Car_Pitch", pitch);
+
+                LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().CarPitchParameter, pitch);
             }
         }
 
         public void OnAdded(World world, ImmutableArray<Entity> entities)
         {
-            //LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().CarLoop, isLoop: false);
         }
 
-        public void OnModified(World world, ImmutableArray<Entity> entities)
-        {
-        }
+        public void OnModified(World world, ImmutableArray<Entity> entities) { }
 
         public void OnRemoved(World world, ImmutableArray<Entity> entities)
         {
-            LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, false);
+            LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, fadeOut: true);
         }
-        
     }
 }

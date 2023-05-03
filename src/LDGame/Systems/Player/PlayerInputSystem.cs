@@ -68,11 +68,14 @@ namespace LDGame.Systems
                 {
                     _forcedInput = save.SwayDirection;
                     _forcedInput = _forcedInput.ClampMagnitude(1);
-
                     direction = DirectionHelper.FromVector(_forcedInput);
-                    impulse = _lockMovement ? Vector2.Zero : _forcedInput;
-                    if (impulse.HasValue)
-                        entity.SetAgentImpulse(impulse, direction);
+
+                    if (_forcedInput.Length() > 0.2f)
+                    {
+                        impulse = _lockMovement ? Vector2.Zero : _forcedInput;
+                        if (impulse.HasValue)
+                            entity.SetAgentImpulse(impulse, direction);
+                    }
                 }
 
                 // Play animations
