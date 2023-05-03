@@ -32,6 +32,8 @@ dotnet run
 ```
 or set `LDGame` as startup project on the steps above.
 
+The sounds require fmod, which I am not really allowed to ship here. If you want to get sounds working, run the editor and check the log error for instructions. You can get the fmod binaries [here](https://www.fmod.com/download), under "Fmod Engine". You just manually add the assemblies on all the architectures you want to target (macOS, Windows, Linux).
+
 ### Other tools!
 The dialogue itself is written in [gum](https://github.com/isadorasophia/gum), a narrative language designed to integrate with the engine. 
 
