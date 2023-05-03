@@ -13,15 +13,20 @@ namespace LDGame.Core.Sounds
     /// </summary>
     public partial class LDGameSoundPlayer
     {
-        private void LoadFmodAssemblies(string resourcesPath)
+        private bool LoadFmodAssemblies(string resourcesPath)
         {
             string fullResourcesPath = FileHelper.GetPath(resourcesPath);
             
             string fmodPath = Path.Join(fullResourcesPath, "fmod", "pc");
             if (!Directory.Exists(fmodPath))
             {
-                GameLogger.Error("Unable to find the library for fmod. Sounds will not be loaded.");
-                return;
+                GameLogger.Error($"You must place fmod.dll libraries at {fmodPath} in order to run sounds.");
+                return false;
+            }
+            else if (Directory.GetFiles(fmodPath).Length == 0)
+            {
+                GameLogger.Error($"You must place fmod.dll libraries at {fmodPath} in order to run sounds.");
+                return false;
             }
             
             // This resolves the assembly when using the logger.
@@ -36,6 +41,8 @@ namespace LDGame.Core.Sounds
 
                 return NativeLibrary.Load(Path.Join(fmodPath, GetLibraryName(name)));
             });
+
+            return true;
         }
 
         private string GetLibraryName(string name, bool loadLogOnDebug = true)

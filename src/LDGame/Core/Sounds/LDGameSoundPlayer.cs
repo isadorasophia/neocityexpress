@@ -37,7 +37,11 @@ namespace LDGame.Core.Sounds
                 return;
             }
             
-            LoadFmodAssemblies(resourcesPath);
+            if (!LoadFmodAssemblies(resourcesPath))
+            {
+                return;
+            }
+
             InitializeFmod();
 
             _ = FetchBanks(resourcesPath);
@@ -83,6 +87,11 @@ namespace LDGame.Core.Sounds
 
         internal EventInstance? FetchOrCreateInstance(SoundEventId id)
         {
+            if (_studio is null)
+            {
+                return null;
+            }
+
             if (!_events.TryGetValue(id, out EventDescription? description))
             {
                 Debug.Assert(_studio is not null);
@@ -221,13 +230,13 @@ namespace LDGame.Core.Sounds
                 GameLogger.Fail("Unable to find a null bus id.");
                 return;
             }
-            
+
             if (!_buses.TryGetValue(id.Value, out Bus? bus))
             {
                 bus = _studio?.GetBus(id.Value);
                 if (bus is null)
                 {
-                    GameLogger.Fail("Invalid bus name!");
+                    // GameLogger.Fail("Invalid bus name!");
                     return;
                 }
 

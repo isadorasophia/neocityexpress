@@ -26,8 +26,30 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\murder\src\Murder.Editor\Murder.Editor.csproj" />
     <ProjectReference Include="..\LDGame\LDGame.csproj" />
   </ItemGroup>
-  
+
+  <ItemGroup>
+    <PackageReference Include="ImGui.NET" Version="1.89.2" />
+    <PackageReference Include="MonoGame.Framework.Content.Pipeline" Version="3.8.1.303" GeneratePathProperty="true" />
+  </ItemGroup>
+
+  <!-- Copy shader tools -->
+  <ItemGroup>
+    <None Condition="'$(Configuration)' == 'Debug'" Include="$(PkgMonoGame_Framework_Content_Pipeline)\content\*" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+  </ItemGroup>
+
+  <!-- Ugly dependencies! This is so the game can build in other machines. -->
+  <ItemGroup>
+    <Reference Include="Bang">
+      <HintPath>..\..\lib\Bang.dll</HintPath>
+    </Reference>
+    <Reference Include="Murder">
+      <HintPath>..\..\lib\Murder.dll</HintPath>
+    </Reference>
+    <Reference Include="Murder.Editor">
+      <HintPath>..\..\lib\Murder.Editor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

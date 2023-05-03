@@ -15,6 +15,7 @@
   <ItemGroup>
     <Content Include="resources\**" CopyToOutputDirectory="PreserveNewest" LinkBase="resources" />
     <Content Include="packed\**" CopyToOutputDirectory="PreserveNewest" TargetPath="resources\%(RecursiveDir)\%(Filename)%(Extension)" />
+    <Content Include="..\..\lib\**" CopyToOutputDirectory="PreserveNewest" TargetPath="" />
   </ItemGroup>
   
   <ItemGroup>
@@ -31,27 +32,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\murder\src\Murder\Murder.csproj" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
-  <!-- Generator files -->
+  <!-- Ugly dependencies! This is so the game can build in other machines. -->
   <ItemGroup>
-    <None Condition="'$(Configuration)' == 'Debug' And '$(Generated)' == 'true' And '$(SkipGenerator)' != true" Include="Generated\.components">
-      <TargetPath>%(Filename)%(Extension)</TargetPath>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Reference Include="Bang">
+      <HintPath>..\..\lib\Bang.dll</HintPath>
+    </Reference>
+    <Reference Include="Murder">
+      <HintPath>..\..\lib\Murder.dll</HintPath>
+    </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="resources\assets\data\Consequences\" />
-  </ItemGroup>
-
-  <!-- Generate files! -->
-  <Target Name="GenerateFiles" AfterTargets="PostBuildEvent" Condition="'$(Generated)' != 'true' And '$(Configuration)' == 'Debug' And '$(SkipGenerator)' != true">
-    <Exec Command="$(OutputPath)Generator -buildWithBinaries $(MSBuildProjectDirectory) $(MSBuildProjectDirectory)\$(OutDir) $(AssemblyName)" Condition="'$(OS)' != 'WINDOWS_NT'" />
-    <Exec Command="$(OutputPath)Generator.exe -buildWithBinaries $(MSBuildProjectDirectory) $(MSBuildProjectDirectory)\$(OutDir) $(AssemblyName)" Condition="'$(OS)' == 'WINDOWS_NT'" />
-
-    <!-- After generating these files, build the project again with the generated specs. -->
-    <MSBuild Projects="$(MSBuildProjectFile)" Properties="Generated=true" />
-  </Target>
 
 </Project>
