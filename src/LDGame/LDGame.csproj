@@ -15,7 +15,7 @@
   <ItemGroup>
     <Content Include="resources\**" CopyToOutputDirectory="PreserveNewest" LinkBase="resources" />
     <Content Include="packed\**" CopyToOutputDirectory="PreserveNewest" TargetPath="resources\%(RecursiveDir)\%(Filename)%(Extension)" />
-    <Content Include="..\..\lib\**" CopyToOutputDirectory="PreserveNewest" TargetPath="" />
+    <Content Include="..\..\lib\**" CopyToOutputDirectory="PreserveNewest" TargetPath="%(RecursiveDir)\%(Filename)%(Extension)" />
   </ItemGroup>
   
   <ItemGroup>
