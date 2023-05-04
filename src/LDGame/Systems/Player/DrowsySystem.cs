@@ -15,7 +15,7 @@ namespace LDGame.Systems.Player
     public class DrowsySystem : IMonoRenderSystem, IFixedUpdateSystem
     {
         private float _currentSleep = 0;
-        private Vector2[] _vertices;
+        private Vector2[] _vertices = new Vector2[4];
 
         private Vector2 _lastCursorPosition = Vector2.Zero;
 
