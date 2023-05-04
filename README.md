@@ -6,9 +6,9 @@
 
 <p align="center">
 <img width="800" src=".github/images/screenshot1.png" alt="Screenshot of Neo City Express">
-</p>
 
-This is the source repository for the "Neo City Express", an entry for Ludum Dare 53.
+<h4 align="center">This is the source for "Neo City Express", an entry for Ludum Dare 53.</h4>
+</p>
 
 ### How can I play it?
 We have an [itch.io page](https://saint11.itch.io/neo-city-express) where you can download the game. 
