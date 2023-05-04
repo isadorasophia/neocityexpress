@@ -43,12 +43,12 @@ The rendenring and graphics of the engine are pulled from Monogame, although we 
 
 Anyway, I hope this code helps on any references around ECS or on the engine. Feel free to reach out on any questions!
 
-### Developers
-Pedro Medeiros (@saint11) \
-Isadora Rodopoulos (me) \
-Davey Wreden (@HelloCakebread) \
-Ryan Roth (@DualRyan) \
-Voice Acting by Jack Hicks
+### Team
+_Pedro Medeiros (@saint11)_ \
+_Isadora Rodopoulos (me)_ \
+_Davey Wreden (@HelloCakebread)_ \
+_Ryan Roth (@DualRyan)_ \
+_Voice Acting by Jack Hicks_
 
 <p align="center">
 <img width="800" src=".github/images/game_logo.png" alt="Screenshot of Neo City Express"><br>
