@@ -15,7 +15,8 @@
   <ItemGroup>
     <Content Include="resources\**" CopyToOutputDirectory="PreserveNewest" LinkBase="resources" />
     <Content Include="packed\**" CopyToOutputDirectory="PreserveNewest" TargetPath="resources\%(RecursiveDir)\%(Filename)%(Extension)" />
-    <Content Include="..\..\lib\**" CopyToOutputDirectory="PreserveNewest" TargetPath="%(RecursiveDir)\%(Filename)%(Extension)" />
+    <Content Include="..\..\lib\resources\**" CopyToOutputDirectory="PreserveNewest" TargetPath="resources\%(RecursiveDir)\%(Filename)%(Extension)" />
+    <Content Include="..\..\lib\generator\**" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   
   <ItemGroup>
@@ -44,6 +45,18 @@
     <Reference Include="Murder">
       <HintPath>..\..\lib\Murder.dll</HintPath>
     </Reference>
+    <Reference Include="Generator">
+      <HintPath>..\..\lib\Generator.dll</HintPath>
+    </Reference>
   </ItemGroup>
+
+  <!-- Generate files! -->
+  <Target Name="GenerateFiles" AfterTargets="PostBuildEvent" Condition="'$(Generated)' != 'true' And '$(Configuration)' == 'Debug' And '$(SkipGenerator)' != true">
+    <Exec Command="$(OutputPath)Generator -buildWithBinaries $(MSBuildProjectDirectory) $(MSBuildProjectDirectory)\$(OutDir) $(AssemblyName)" Condition="'$(OS)' != 'WINDOWS_NT'" />
+    <Exec Command="$(OutputPath)Generator.exe -buildWithBinaries $(MSBuildProjectDirectory) $(MSBuildProjectDirectory)\$(OutDir) $(AssemblyName)" Condition="'$(OS)' == 'WINDOWS_NT'" />
+
+    <!-- After generating these files, build the project again with the generated specs. -->
+    <MSBuild Projects="$(MSBuildProjectFile)" Properties="Generated=true" />
+  </Target>
 
 </Project>
