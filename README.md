@@ -16,9 +16,11 @@ We have an [itch.io page](https://saint11.itch.io/neo-city-express) where you ca
 It currently runs on Windows, Linux and macOS.
 
 ### How to build it?
-SO I manually copied the engine binaries built with debug symbols. This is not ideal, but the engine is not ready to be public or shipped yet, so this is a compromise that I found to release this source without spending a week working on it.
+All you really need is [dotnet 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) installed and that you initialize the Murder Engine binaries:
 
-BUT! You know what? The project builds! Back to business, the first step is that all you really need is [dotnet 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) installed.
+```bash
+git submodule update --init --recursive
+```
 
 1. Building the editor 
 
