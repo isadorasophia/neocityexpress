@@ -48,7 +48,7 @@ namespace LDGame.StateMachines.Menu
                 LDGameSoundPlayer.Instance.GetGlobalParameterValue(LibraryServices.GetRoadLibrary().MusicFocusParameter) ?? 0;
 
             LDGameSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetRoadLibrary().MusicFocusParameter, 1);
-            _hadCarLoop = LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, fadeOut: false);
+            _hadCarLoop = LDGameSoundPlayer.Instance.Stop(LibraryServices.GetRoadLibrary().CarLoop, fadeOut: true);
 
             while (true)
             {

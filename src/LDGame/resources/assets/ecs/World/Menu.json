@@ -31,7 +31,7 @@
           "$type": "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.MainMenuStateMachine, LDGame]], Bang",
           "_routine": {
             "$type": "LDGame.StateMachines.MainMenuStateMachine, LDGame",
-            "_newGameWorld": "dac6ebf8-f764-4ffa-9302-9bdd5180bdaf",
+            "_newGameWorld": "03016b38-14fe-464c-903a-751b056081ab",
             "_continueWorld": "465b6785-586b-4e4d-8313-bf363f5e67a1",
             "_cachedPersistedState": "Main"
           }

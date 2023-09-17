@@ -23,9 +23,7 @@ namespace LDGame.StateMachines
         private string _message = string.Empty;
 
         [JsonProperty]
-        private SituationComponent? _situation = null;
-
-        private Portrait? _portrait = null;
+        private readonly SituationComponent? _situation = null;
 
         [JsonProperty]
         [GameAssetId<WorldAsset>]
@@ -33,10 +31,16 @@ namespace LDGame.StateMachines
 
         [JsonProperty]
         [Tooltip("Whether it should save and keep progress of the game.")]
-        private bool _progressGame = true;
+        private readonly bool _progressGame = true;
 
         [JsonProperty]
-        private bool _fetchContentFromSave = true;
+        [Tooltip("Whether this is the intro scene.")]
+        private readonly bool _intro = false;
+
+        [JsonProperty]
+        private readonly bool _fetchContentFromSave = true;
+
+        private Portrait? _portrait = null;
 
         public LightCutsceneStateMachine()
         {
@@ -65,6 +69,16 @@ namespace LDGame.StateMachines
 
             LDGameSoundPlayer.Instance.Stop(fadeOut: true);
 
+            bool isTrueEnding = save.GameplayBlackboard.TrueEndingUnlocked;
+            if (_intro)
+            {
+                LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().IntroMusic, isLoop: true);
+            }
+            else if (isTrueEnding)
+            {
+                LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().MayorMusic, isLoop: true);
+            }
+
             if (!_progressGame)
             {
                 // Hospital Game over screen
@@ -76,7 +90,6 @@ namespace LDGame.StateMachines
                 LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().HeartMonitor, isLoop: true, stopLastMusic: false);
             }
 
-            bool isTrueEnding = save.GameplayBlackboard.TrueEndingUnlocked;
             if (_progressGame && !isTrueEnding)
             {
                 save.Day++;

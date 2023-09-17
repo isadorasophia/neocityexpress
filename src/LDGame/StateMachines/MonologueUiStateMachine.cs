@@ -198,11 +198,13 @@ namespace LDGame.StateMachines
                 visibleCharacters: currentLength
             );
 
-            if (_playNextSound < Game.NowUnescaled && currentLength<line.Text.Length)
+            if (_playNextSound < Game.NowUnescaled && currentLength<line.Text.Length)   
             {
                 if (isRightSpeaker)
                 {
-                    LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().GrandmaTextBeep, isLoop: false);
+                    LDGameSoundPlayer.Instance.PlayEvent(_speaker == SpeakerKind.Granny ?
+                        LibraryServices.GetRoadLibrary().GrandmaTextBeep :
+                        LibraryServices.GetRoadLibrary().CarTextBeep, isLoop: false);
                 }
                 else
                 {

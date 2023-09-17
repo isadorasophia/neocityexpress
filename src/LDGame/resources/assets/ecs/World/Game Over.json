@@ -45,6 +45,7 @@
             },
             "_nextLevel": "e09343c5-19b5-419d-88f4-f06ed35a4752",
             "_progressGame": false,
+            "_intro": false,
             "_fetchContentFromSave": false,
             "_cachedPersistedState": "Main"
           }

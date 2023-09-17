@@ -81,6 +81,7 @@ namespace LDGame.Assets
         public readonly SoundEventId GrandmaTextVibrate;
         public readonly SoundEventId GrandmaTextBeep;
         public readonly SoundEventId DaggersTextBeep;
+        public readonly SoundEventId CarTextBeep;
 
         public readonly SoundEventId LeftDrug;
         public readonly SoundEventId Fire;
@@ -99,6 +100,8 @@ namespace LDGame.Assets
         public readonly SoundEventId LevelMusic;
         public readonly SoundEventId TrueEndingNarrator;
 
+        public readonly SoundEventId MayorMusic;
+        public readonly SoundEventId IntroMusic;
         public readonly SoundEventId HospitalMusic;
         public readonly SoundEventId HeartMonitor;
 

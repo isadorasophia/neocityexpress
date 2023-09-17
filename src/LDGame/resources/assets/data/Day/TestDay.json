@@ -20,7 +20,18 @@
     },
     "AfterDriving": {
       "$type": "System.Collections.Immutable.ImmutableArray`1[[LDGame.Assets.DriverlessDialogueEvent, LDGame]], System.Collections.Immutable",
-      "$values": []
+      "$values": [
+        {
+          "$type": "LDGame.Assets.DriverlessDialogueEvent, LDGame",
+          "Situation": {
+            "$type": "Murder.Components.SituationComponent, Murder",
+            "Character": "4713c664-f96b-467e-815d-fa675fa2c018",
+            "Situation": 27,
+            "Sender": ""
+          },
+          "Type": 0
+        }
+      ]
     },
     "PossibleCars": {
       "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
@@ -33,7 +44,7 @@
       "$values": []
     },
     "StartingHealth": 5,
-    "Distance": 100.0
+    "Distance": 10.0
   },
   "Consequences": {
     "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
@@ -52,8 +63,8 @@
   },
   "DeliveryEnded": {
     "$type": "Murder.Components.SituationComponent, Murder",
-    "Character": "00000000-0000-0000-0000-000000000000",
-    "Situation": 0,
+    "Character": "bb50e3ac-34bb-4a2b-83f4-3b65b30af929",
+    "Situation": 1,
     "Sender": ""
   },
   "Name": "TestDay",

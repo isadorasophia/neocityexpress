@@ -4,7 +4,13 @@
   "Order": 1,
   "_systems": {
     "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
-    "$values": []
+    "$values": [
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "LDGame.Systems.GameOverSystem, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      }
+    ]
   },
   "_features": {
     "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
@@ -21,10 +27,10 @@
   },
   "_entities": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
-    "792c3810-102e-46e5-ab46-b492b211106e": {
+    "6f5f5157-596e-41d3-8002-cc02a153908c": {
       "$type": "Murder.Prefabs.EntityInstance, Murder",
-      "_guid": "792c3810-102e-46e5-ab46-b492b211106e",
-      "_name": "StateMachine",
+      "_guid": "6f5f5157-596e-41d3-8002-cc02a153908c",
+      "_name": "State machine",
       "_components": {
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Bang.StateMachines.StateMachineComponent`1[[LDGame.StateMachines.LightCutsceneStateMachine, LDGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
@@ -39,7 +45,7 @@
             },
             "_nextLevel": "465b6785-586b-4e4d-8313-bf363f5e67a1",
             "_progressGame": true,
-            "_intro": false,
+            "_intro": true,
             "_fetchContentFromSave": true,
             "_cachedPersistedState": "Main"
           }
@@ -50,6 +56,6 @@
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
   },
-  "Name": "Light Cutscene",
-  "Guid": "dac6ebf8-f764-4ffa-9302-9bdd5180bdaf"
+  "Name": "Intro",
+  "Guid": "03016b38-14fe-464c-903a-751b056081ab"
 }

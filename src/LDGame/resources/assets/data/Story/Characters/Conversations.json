@@ -2443,6 +2443,22 @@
                 }
               ]
             },
+            "Actions": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.DialogAction, Murder]], System.Collections.Immutable",
+              "$values": [
+                {
+                  "$type": "Murder.Core.Dialogs.DialogAction, Murder",
+                  "Id": 0,
+                  "Fact": {
+                    "$type": "Murder.Core.Dialogs.Fact, Murder",
+                    "Name": "TrueEndingUnlocked",
+                    "Kind": 2
+                  },
+                  "Kind": 0,
+                  "BoolValue": true
+                }
+              ]
+            },
             "IsChoice": false
           }
         ]

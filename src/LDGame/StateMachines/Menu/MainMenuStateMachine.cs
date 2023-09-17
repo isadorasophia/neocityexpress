@@ -80,6 +80,9 @@ namespace LDGame.StateMachines
 
                             EffectsServices.FadeIn(World, .5f, Palette.Colors[1], false);
                             // yield return Wait.ForSeconds(.5f);
+                            
+                            // Unload save so we start from scratch.
+                            Game.Data.ResetActiveSave();
 
                             Game.Instance.QueueWorldTransition(_newGameWorld);
                             break;

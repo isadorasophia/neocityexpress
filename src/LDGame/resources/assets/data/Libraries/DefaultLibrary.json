@@ -164,6 +164,14 @@
     "Data4": 869260905,
     "Path": "event:/Mcblack_Text_Beep"
   },
+  "CarTextBeep": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 168922298,
+    "Data2": 1117564024,
+    "Data3": 900961688,
+    "Data4": -1170541535,
+    "Path": "event:/Car_Text_Beep"
+  },
   "LeftDrug": {
     "$type": "Murder.Core.Sounds.SoundEventId, Murder",
     "Data1": -959494439,
@@ -275,6 +283,22 @@
     "Data3": -1718671739,
     "Data4": 1008154473,
     "Path": "event:/Real_Ending"
+  },
+  "MayorMusic": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1774434866,
+    "Data2": 1084748177,
+    "Data3": -150644839,
+    "Data4": 1428880638,
+    "Path": "event:/Mayor"
+  },
+  "IntroMusic": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 192795506,
+    "Data2": 1238884693,
+    "Data3": 580762248,
+    "Data4": -1642126170,
+    "Path": "event:/Intro"
   },
   "HospitalMusic": {
     "$type": "Murder.Core.Sounds.SoundEventId, Murder",
